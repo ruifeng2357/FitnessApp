@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="181px"
+    android:background="@color/color_white" >
+
+    <RelativeLayout
+        android:id="@+id/item_health_main_data"
+        android:layout_width="fill_parent"
+        android:layout_height="180px" >
+
+            <RelativeLayout
+                android:layout_width="580px"
+                android:layout_height="180px"
+                android:layout_centerVertical="true" >
+
+                <ImageView
+                    android:id="@+id/img_health_main_item_image"
+                    android:layout_width="164px"
+                    android:layout_height="164px"
+                    android:layout_marginLeft="12px"
+                    android:layout_marginTop="8px" />
+
+        <TextView
+            android:id="@+id/txt_health_main_item_title"
+            android:layout_width="wrap_content"
+            android:layout_height="40px"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="226px"
+            android:layout_marginTop="72px"
+            android:text="AAAA"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:textColor="@color/common_note_text"
+            android:textSize="30px" />
+
+    </RelativeLayout>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="1px"
+        android:layout_below="@+id/item_question_data"
+        android:background="@color/common_list_border" >
+
+    </RelativeLayout>
+
+</RelativeLayout>

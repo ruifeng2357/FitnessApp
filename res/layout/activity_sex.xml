@@ -1,0 +1,168 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:android1="http://schemas.android.com/apk/res/android"
+    android:id="@+id/rl_sex"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android1:background="@drawable/common_background"
+    tools:context=".LoginActivity" >
+
+    <RelativeLayout
+        android1:id="@+id/rl_sex_header"
+        android1:layout_width="fill_parent"
+        android1:layout_height="95px"
+        android1:layout_alignParentLeft="true"
+        android1:layout_alignParentTop="true"
+        android1:background="#00a086" >
+
+        <ImageButton
+            android1:id="@+id/imgbtn_sex_back"
+            android1:layout_width="55px"
+            android1:layout_height="55px"
+            android1:layout_centerVertical="true"
+            android1:layout_marginLeft="20px"
+            android1:background="@android:color/transparent"
+            android1:scaleType="fitCenter"
+            android1:src="@drawable/btn_back" />
+
+        <TextView
+            android1:id="@+id/lbl_sex_title"
+            android1:layout_width="400px"
+            android1:layout_height="match_parent"
+            android1:layout_centerHorizontal="true"
+            android1:background="@android:color/transparent"
+            android1:gravity="center"
+            android1:text="@string/activity_sex_title"
+            android1:textColor="@android:color/white"
+            android1:textSize="@dimen/title_fnt_size" />
+
+        <Button
+            android1:id="@+id/btn_sex_save"
+            android1:layout_width="112px"
+            android1:layout_height="64px"
+            android1:layout_alignParentRight="true"
+            android1:layout_centerVertical="true"
+            android1:layout_marginRight="24px"
+            android1:background="@drawable/btn_transparent"
+            android1:text="@string/common_save"
+            android1:textColor="@color/color_white"
+            android1:textSize="@dimen/normal_fnt_size" />
+
+    </RelativeLayout>
+
+    <TextView
+        android1:id="@+id/lbl_sex_note"
+        android1:layout_width="wrap_content"
+        android1:layout_height="wrap_content"
+        android1:layout_below="@id/rl_sex_header"
+        android1:layout_centerHorizontal="true"
+        android1:layout_marginTop="86px"
+        android1:text="@string/activity_sex_txt_note"
+        android1:textColor="#6e6e6e"
+        android1:textSize="@dimen/normal_fnt_size" />
+
+    <RelativeLayout
+        android1:id="@+id/rl_sex_choose"
+        android1:layout_width="fill_parent"
+        android1:layout_height="wrap_content"
+        android1:layout_below="@id/lbl_sex_note"
+        android1:layout_marginTop="90px" >
+
+        <RelativeLayout
+            android1:id="@+id/rl_sex_woman"
+            android1:layout_width="wrap_content"
+            android1:layout_height="wrap_content"
+            android1:layout_alignParentLeft="true"
+            android1:layout_marginLeft="94px" >
+
+            <ImageView
+                android1:id="@+id/img_sex_woman"
+                android1:layout_width="224px"
+                android1:layout_height="264px"
+                android1:src="@drawable/activity_sex_woman_d" />
+
+            <TextView
+                android1:id="@+id/lbl_sex_woman_u"
+                android1:layout_width="135px"
+                android1:layout_height="47px"
+                android1:layout_below="@id/img_sex_woman"
+                android1:layout_centerHorizontal="true"
+                android1:layout_marginTop="36px"
+                android1:background="@drawable/common_gray_radius"
+                android1:gravity="center_vertical|center_horizontal"
+                android1:text="@string/activity_sex_btn_woman"
+                android1:textColor="@color/color_white"
+                android1:textSize="@dimen/medium_fnt_size" />
+
+            <TextView
+                android1:id="@+id/lbl_sex_woman_d"
+                android1:layout_width="135px"
+                android1:layout_height="47px"
+                android1:layout_below="@id/img_sex_woman"
+                android1:layout_centerHorizontal="true"
+                android1:layout_marginTop="36px"
+                android1:background="@drawable/common_green_radius"
+                android1:gravity="center_vertical|center_horizontal"
+                android1:text="@string/activity_sex_btn_woman"
+                android1:textColor="@color/color_white"
+                android1:textSize="@dimen/medium_fnt_size" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android1:id="@+id/rl_sex_man"
+            android1:layout_width="wrap_content"
+            android1:layout_height="wrap_content"
+            android1:layout_alignParentRight="true"
+            android1:layout_marginRight="94px" >
+
+            <ImageView
+                android1:id="@+id/img_sex_man"
+                android1:layout_width="224px"
+                android1:layout_height="264px"
+                android1:src="@drawable/activity_sex_man_u" />
+
+            <TextView
+                android1:id="@+id/lbl_sex_man_u"
+                android1:layout_width="135px"
+                android1:layout_height="47px"
+                android1:layout_below="@id/img_sex_man"
+                android1:layout_centerHorizontal="true"
+                android1:layout_marginTop="36px"
+                android1:background="@drawable/common_gray_radius"
+                android1:gravity="center_vertical|center_horizontal"
+                android1:text="@string/activity_sex_btn_man"
+                android1:textColor="@color/color_white"
+                android1:textSize="@dimen/medium_fnt_size" />
+
+            <TextView
+                android1:id="@+id/lbl_sex_man_d"
+                android1:layout_width="135px"
+                android1:layout_height="47px"
+                android1:layout_below="@id/img_sex_man"
+                android1:layout_centerHorizontal="true"
+                android1:layout_marginTop="36px"
+                android1:background="@drawable/common_green_radius"
+                android1:gravity="center_vertical|center_horizontal"
+                android1:text="@string/activity_sex_btn_man"
+                android1:textColor="@color/color_white"
+                android1:textSize="@dimen/medium_fnt_size" />
+
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+    <Button
+        android1:id="@+id/btn_sex_next"
+        android1:layout_width="527px"
+        android1:layout_height="90px"
+        android1:layout_alignParentBottom="true"
+        android1:layout_alignParentLeft="false"
+        android1:layout_centerHorizontal="true"
+        android1:layout_marginBottom="70px"
+        android1:background="@drawable/btn_green"
+        android1:text="@string/activity_sex_btn_next"
+        android1:textColor="@color/color_white"
+        android1:textSize="@dimen/button_label_fnt_size" />
+
+</RelativeLayout>

@@ -1,0 +1,641 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:android1="http://schemas.android.com/apk/res/android"
+    android:id="@+id/rl_myinfo"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android1:background="@drawable/common_background"
+    tools:context=".LoginActivity" >
+
+    <RelativeLayout
+        android1:id="@+id/rl_myinfo_header"
+        android1:layout_width="fill_parent"
+        android1:layout_height="95px"
+        android1:layout_alignParentLeft="true"
+        android1:layout_alignParentTop="true"
+        android1:background="#00a086" >
+
+        <ImageButton
+            android1:id="@+id/imgbtn_myinfo_back"
+            android1:layout_width="55px"
+            android1:layout_height="55px"
+            android1:layout_centerVertical="true"
+            android1:layout_marginLeft="20px"
+            android1:background="@android:color/transparent"
+            android1:scaleType="fitCenter"
+            android1:src="@drawable/btn_back" />
+
+        <TextView
+            android1:id="@+id/lbl_myinfo_title"
+            android1:layout_width="400px"
+            android1:layout_height="match_parent"
+            android1:layout_centerHorizontal="true"
+            android1:background="@android:color/transparent"
+            android1:gravity="center"
+            android1:text="@string/activity_myinfo_title"
+            android1:textColor="@android:color/white"
+            android1:textSize="@dimen/title_fnt_size" />
+    </RelativeLayout>
+
+    <ScrollView
+        android1:id="@+id/scrollView1"
+        android1:layout_width="fill_parent"
+        android1:layout_height="wrap_content"
+        android1:layout_below="@id/rl_myinfo_header" >
+
+        <RelativeLayout
+            android1:id="@+id/RelativeLayout1"
+            android1:layout_width="match_parent"
+            android1:layout_height="match_parent"
+            android1:orientation="vertical" >
+
+            <RelativeLayout
+                android1:id="@+id/rl_myinfo_paragraph1"
+                android1:layout_width="fill_parent"
+                android1:layout_height="265px" >
+
+                <RelativeLayout
+                    android1:id="@+id/rl_myinfo_myphoto"
+                    android1:layout_width="292px"
+                    android1:layout_height="fill_parent" >
+
+                    <ImageView
+                        android1:id="@+id/img_myinfo_myphoto"
+                        android1:layout_width="224px"
+                        android1:layout_height="228px"
+                        android1:layout_centerHorizontal="true"
+                        android1:layout_centerVertical="true"
+                        android1:src="@drawable/activity_sex_woman_d" />
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android1:layout_width="fill_parent"
+                    android1:layout_height="fill_parent"
+                    android1:layout_toRightOf="@id/rl_myinfo_myphoto" >
+
+                    <TextView
+                        android1:id="@+id/lbl_myinfo_username"
+                        android1:layout_width="wrap_content"
+                        android1:layout_height="wrap_content"
+                        android1:layout_alignParentLeft="true"
+                        android1:layout_centerVertical="true"
+                        android1:layout_marginLeft="20px"
+                        android1:text="235347345345"
+                        android1:textColor="@color/common_note_text"
+                        android1:textSize="@dimen/normal_fnt_size" />
+
+                    <TextView
+                        android1:id="@+id/lbl_myinfo_changeusername"
+                        android1:layout_width="wrap_content"
+                        android1:layout_height="wrap_content"
+                        android1:layout_above="@id/lbl_myinfo_username"
+                        android1:layout_alignParentLeft="true"
+                        android1:layout_marginBottom="15px"
+                        android1:layout_marginLeft="20px"
+                        android1:text="@string/activity_myinfo_username"
+                        android1:textColor="@color/common_normal_text"
+                        android1:textSize="@dimen/normal_fnt_size" />
+
+                    <TextView
+                        android1:id="@+id/lbl_myinfo_changepassword"
+                        android1:layout_width="wrap_content"
+                        android1:layout_height="wrap_content"
+                        android1:layout_alignParentLeft="true"
+                        android1:layout_below="@id/lbl_myinfo_username"
+                        android1:layout_marginLeft="20px"
+                        android1:layout_marginTop="15px"
+                        android1:text="@string/activity_myinfo_changepassword"
+                        android1:textColor="@color/common_normal_text"
+                        android1:textSize="@dimen/normal_fnt_size" />
+
+                </RelativeLayout>
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android1:id="@+id/rl_myinfo_paragraph2"
+                android1:layout_width="fill_parent"
+                android1:layout_height="315px"
+                android1:layout_below="@id/rl_myinfo_paragraph1"
+                android1:layout_marginTop="15px" >
+
+                <RelativeLayout
+                    android1:id="@+id/rl_myinfo_bmi"
+                    android1:layout_width="fill_parent"
+                    android1:layout_height="105px"
+                    android1:background="@color/color_white" >
+
+                    <LinearLayout
+                        android1:layout_width="fill_parent"
+                        android1:layout_height="wrap_content"
+                        android1:layout_alignParentTop="true"
+                        android1:background="@drawable/common_separate"
+                        android1:orientation="vertical" >
+
+                    </LinearLayout>
+
+                    <TextView
+                        android1:id="@+id/textView1"
+                        android1:layout_width="wrap_content"
+                        android1:layout_height="wrap_content"
+                        android1:layout_alignParentLeft="true"
+                        android1:layout_centerVertical="true"
+                        android1:layout_marginLeft="50px"
+                        android1:text="@string/activity_myinfo_bmi"
+                        android1:textColor="@color/common_note_text"
+                        android1:textSize="34px" />
+
+                    <ImageView
+                        android1:id="@+id/img_myinfo_bmi_next"
+                        android1:layout_width="25px"
+                        android1:layout_height="45px"
+                        android1:layout_alignParentRight="true"
+                        android1:layout_centerVertical="true"
+                        android1:layout_marginRight="38px"
+                        android1:src="@drawable/common_next" />
+
+                    <TextView
+                        android1:id="@+id/lbl_myinfo_bmi"
+                        android1:layout_width="wrap_content"
+                        android1:layout_height="wrap_content"
+                        android1:layout_centerVertical="true"
+                        android1:layout_marginRight="36px"
+                        android1:layout_toLeftOf="@id/img_myinfo_bmi_next"
+                        android1:text="28.2"
+                        android1:textColor="@color/common_note_text"
+                        android1:textSize="32px" />
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android1:id="@+id/rl_myinfo_bmr"
+                    android1:layout_width="fill_parent"
+                    android1:layout_height="105px"
+                    android1:layout_below="@id/rl_myinfo_bmi"
+                    android1:background="@color/color_white" >
+
+                    <LinearLayout
+                        android1:layout_width="fill_parent"
+                        android1:layout_height="wrap_content"
+                        android1:layout_alignParentTop="true"
+                        android1:background="@drawable/common_separate"
+                        android1:orientation="vertical" >
+                    </LinearLayout>
+
+                    <TextView
+                        android1:id="@+id/TextView01"
+                        android1:layout_width="wrap_content"
+                        android1:layout_height="wrap_content"
+                        android1:layout_alignParentLeft="true"
+                        android1:layout_centerVertical="true"
+                        android1:layout_marginLeft="50px"
+                        android1:text="@string/activity_myinfo_bmr"
+                        android1:textColor="@color/common_note_text"
+                        android1:textSize="34px" />
+
+                    <ImageView
+                        android1:id="@+id/ImageView01"
+                        android1:layout_width="25px"
+                        android1:layout_height="45px"
+                        android1:layout_alignParentRight="true"
+                        android1:layout_centerVertical="true"
+                        android1:layout_marginRight="38px"
+                        android1:src="@drawable/common_next" />
+
+                    <TextView
+                        android1:id="@+id/lbl_myinfo_bmr"
+                        android1:layout_width="wrap_content"
+                        android1:layout_height="wrap_content"
+                        android1:layout_centerVertical="true"
+                        android1:layout_marginRight="36px"
+                        android1:layout_toLeftOf="@+id/ImageView01"
+                        android1:text="32.4"
+                        android1:textColor="@color/common_note_text"
+                        android1:textSize="32px" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android1:id="@+id/rl_myinfo_level"
+                    android1:layout_width="fill_parent"
+                    android1:layout_height="105px"
+                    android1:layout_below="@id/rl_myinfo_bmr"
+                    android1:background="@color/color_white" >
+
+                    <LinearLayout
+                        android1:layout_width="fill_parent"
+                        android1:layout_height="wrap_content"
+                        android1:layout_alignParentTop="true"
+                        android1:background="@drawable/common_separate"
+                        android1:orientation="vertical" >
+                    </LinearLayout>
+
+                    <TextView
+                        android1:id="@+id/TextView04"
+                        android1:layout_width="wrap_content"
+                        android1:layout_height="wrap_content"
+                        android1:layout_alignParentLeft="true"
+                        android1:layout_centerVertical="true"
+                        android1:layout_marginLeft="50px"
+                        android1:text="@string/activity_myinfo_level"
+                        android1:textColor="@color/common_note_text"
+                        android1:textSize="34px" />
+
+                    <ImageView
+                        android1:id="@+id/ImageView02"
+                        android1:layout_width="25px"
+                        android1:layout_height="45px"
+                        android1:layout_alignParentRight="true"
+                        android1:layout_centerVertical="true"
+                        android1:layout_marginRight="38px"
+                        android1:src="@drawable/common_next" />
+
+                    <TextView
+                        android1:id="@+id/lbl_myinfo_level"
+                        android1:layout_width="wrap_content"
+                        android1:layout_height="wrap_content"
+                        android1:layout_centerVertical="true"
+                        android1:layout_marginRight="36px"
+                        android1:layout_toLeftOf="@+id/ImageView02"
+                        android1:text="@string/activity_dailysportintensity_low"
+                        android1:textColor="@color/common_note_text"
+                        android1:textSize="32px" />
+
+                    <ImageView
+                        android1:id="@+id/img_myinfo_level"
+                        android1:layout_width="58px"
+                        android1:layout_height="58px"
+                        android1:layout_centerVertical="true"
+                        android1:layout_marginRight="20px"
+                        android1:layout_toLeftOf="@id/lbl_myinfo_level" />
+
+                    <LinearLayout
+                        android1:layout_width="fill_parent"
+                        android1:layout_height="wrap_content"
+                        android1:layout_alignParentBottom="true"
+                        android1:background="@drawable/common_separate"
+                        android1:orientation="vertical" >
+
+                    </LinearLayout>
+
+                </RelativeLayout>
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android1:id="@+id/rl_myinfo_paragraph3"
+                android1:layout_width="fill_parent"
+                android1:layout_height="wrap_content"
+                android1:layout_below="@id/rl_myinfo_paragraph2"
+                android1:layout_marginTop="38px" >
+
+                <RelativeLayout
+                    android1:id="@+id/rl_myinfo_sex"
+                    android1:layout_width="fill_parent"
+                    android1:layout_height="105px"
+                    android1:background="@color/color_white" >
+
+                    <LinearLayout
+                        android1:layout_width="fill_parent"
+                        android1:layout_height="wrap_content"
+                        android1:layout_alignParentTop="true"
+                        android1:background="@drawable/common_separate"
+                        android1:orientation="vertical" >
+                    </LinearLayout>
+
+                    <TextView
+                        android1:id="@+id/TextView03"
+                        android1:layout_width="wrap_content"
+                        android1:layout_height="wrap_content"
+                        android1:layout_alignParentLeft="true"
+                        android1:layout_centerVertical="true"
+                        android1:layout_marginLeft="50px"
+                        android1:text="@string/activity_myinfo_sex"
+                        android1:textColor="@color/common_note_text"
+                        android1:textSize="34px" />
+
+                    <ImageView
+                        android1:id="@+id/ImageView06"
+                        android1:layout_width="25px"
+                        android1:layout_height="45px"
+                        android1:layout_alignParentRight="true"
+                        android1:layout_centerVertical="true"
+                        android1:layout_marginRight="38px"
+                        android1:src="@drawable/common_next" />
+
+                    <TextView
+                        android1:id="@+id/lbl_myinfo_sex"
+                        android1:layout_width="wrap_content"
+                        android1:layout_height="wrap_content"
+                        android1:layout_centerVertical="true"
+                        android1:layout_marginRight="36px"
+                        android1:layout_toLeftOf="@+id/ImageView06"
+                        android1:text="28.2"
+                        android1:textColor="@color/common_note_text"
+                        android1:textSize="32px" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android1:id="@+id/rl_myinfo_birthday"
+                    android1:layout_width="fill_parent"
+                    android1:layout_height="105px"
+                    android1:layout_below="@id/rl_myinfo_sex"
+                    android1:background="@color/color_white" >
+
+                    <LinearLayout
+                        android1:layout_width="fill_parent"
+                        android1:layout_height="wrap_content"
+                        android1:layout_alignParentTop="true"
+                        android1:background="@drawable/common_separate"
+                        android1:orientation="vertical" >
+                    </LinearLayout>
+
+                    <TextView
+                        android1:id="@+id/TextView06"
+                        android1:layout_width="wrap_content"
+                        android1:layout_height="wrap_content"
+                        android1:layout_alignParentLeft="true"
+                        android1:layout_centerVertical="true"
+                        android1:layout_marginLeft="50px"
+                        android1:text="@string/activity_myinfo_birthday"
+                        android1:textColor="@color/common_note_text"
+                        android1:textSize="34px" />
+
+                    <ImageView
+                        android1:id="@+id/ImageView04"
+                        android1:layout_width="25px"
+                        android1:layout_height="45px"
+                        android1:layout_alignParentRight="true"
+                        android1:layout_centerVertical="true"
+                        android1:layout_marginRight="38px"
+                        android1:src="@drawable/common_next" />
+
+                    <TextView
+                        android1:id="@+id/lbl_myinfo_birthday"
+                        android1:layout_width="wrap_content"
+                        android1:layout_height="wrap_content"
+                        android1:layout_centerVertical="true"
+                        android1:layout_marginRight="36px"
+                        android1:layout_toLeftOf="@+id/ImageView04"
+                        android1:text="32.4"
+                        android1:textColor="@color/common_note_text"
+                        android1:textSize="32px" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android1:id="@+id/rl_myinfo_height"
+                    android1:layout_width="fill_parent"
+                    android1:layout_height="105px"
+                    android1:layout_below="@id/rl_myinfo_birthday"
+                    android1:background="@color/color_white" >
+
+                    <LinearLayout
+                        android1:layout_width="fill_parent"
+                        android1:layout_height="wrap_content"
+                        android1:layout_alignParentTop="true"
+                        android1:background="@drawable/common_separate"
+                        android1:orientation="vertical" >
+                    </LinearLayout>
+
+                    <TextView
+                        android1:id="@+id/TextView12"
+                        android1:layout_width="wrap_content"
+                        android1:layout_height="wrap_content"
+                        android1:layout_alignParentLeft="true"
+                        android1:layout_centerVertical="true"
+                        android1:layout_marginLeft="50px"
+                        android1:text="@string/activity_myinfo_height"
+                        android1:textColor="@color/common_note_text"
+                        android1:textSize="34px" />
+
+                    <ImageView
+                        android1:id="@+id/ImageView07"
+                        android1:layout_width="25px"
+                        android1:layout_height="45px"
+                        android1:layout_alignParentRight="true"
+                        android1:layout_centerVertical="true"
+                        android1:layout_marginRight="38px"
+                        android1:src="@drawable/common_next" />
+
+                    <TextView
+                        android1:id="@+id/lbl_myinfo_height"
+                        android1:layout_width="wrap_content"
+                        android1:layout_height="wrap_content"
+                        android1:layout_centerVertical="true"
+                        android1:layout_marginRight="36px"
+                        android1:layout_toLeftOf="@+id/ImageView07"
+                        android1:text="28.2"
+                        android1:textColor="@color/common_note_text"
+                        android1:textSize="32px" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android1:id="@+id/rl_myinfo_curweight"
+                    android1:layout_width="fill_parent"
+                    android1:layout_height="105px"
+                    android1:layout_below="@id/rl_myinfo_height"
+                    android1:background="@color/color_white" >
+
+                    <LinearLayout
+                        android1:layout_width="fill_parent"
+                        android1:layout_height="wrap_content"
+                        android1:layout_alignParentTop="true"
+                        android1:background="@drawable/common_separate"
+                        android1:orientation="vertical" >
+                    </LinearLayout>
+
+                    <TextView
+                        android1:id="@+id/TextView11"
+                        android1:layout_width="wrap_content"
+                        android1:layout_height="wrap_content"
+                        android1:layout_alignParentLeft="true"
+                        android1:layout_centerVertical="true"
+                        android1:layout_marginLeft="50px"
+                        android1:text="@string/activity_myinfo_curweight"
+                        android1:textColor="@color/common_note_text"
+                        android1:textSize="34px" />
+
+                    <ImageView
+                        android1:id="@+id/ImageView03"
+                        android1:layout_width="25px"
+                        android1:layout_height="45px"
+                        android1:layout_alignParentRight="true"
+                        android1:layout_centerVertical="true"
+                        android1:layout_marginRight="38px"
+                        android1:src="@drawable/common_next" />
+
+                    <TextView
+                        android1:id="@+id/lbl_myinfo_curweight"
+                        android1:layout_width="wrap_content"
+                        android1:layout_height="wrap_content"
+                        android1:layout_centerVertical="true"
+                        android1:layout_marginRight="36px"
+                        android1:layout_toLeftOf="@+id/ImageView03"
+                        android1:text="32.4"
+                        android1:textColor="@color/common_note_text"
+                        android1:textSize="32px" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android1:id="@+id/rl_myinfo_targetweight"
+                    android1:layout_width="fill_parent"
+                    android1:layout_height="105px"
+                    android1:layout_below="@id/rl_myinfo_curweight"
+                    android1:background="@color/color_white" >
+
+                    <LinearLayout
+                        android1:layout_width="fill_parent"
+                        android1:layout_height="wrap_content"
+                        android1:layout_alignParentTop="true"
+                        android1:background="@drawable/common_separate"
+                        android1:orientation="vertical" >
+                    </LinearLayout>
+
+                    <TextView
+                        android1:id="@+id/TextView13"
+                        android1:layout_width="wrap_content"
+                        android1:layout_height="wrap_content"
+                        android1:layout_alignParentLeft="true"
+                        android1:layout_centerVertical="true"
+                        android1:layout_marginLeft="50px"
+                        android1:text="@string/activity_myinfo_targetweight"
+                        android1:textColor="@color/common_note_text"
+                        android1:textSize="34px" />
+
+                    <ImageView
+                        android1:id="@+id/ImageView09"
+                        android1:layout_width="25px"
+                        android1:layout_height="45px"
+                        android1:layout_alignParentRight="true"
+                        android1:layout_centerVertical="true"
+                        android1:layout_marginRight="38px"
+                        android1:src="@drawable/common_next" />
+
+                    <TextView
+                        android1:id="@+id/lbl_myinfo_targetweight"
+                        android1:layout_width="wrap_content"
+                        android1:layout_height="wrap_content"
+                        android1:layout_centerVertical="true"
+                        android1:layout_marginRight="36px"
+                        android1:layout_toLeftOf="@+id/ImageView09"
+                        android1:text="28.2"
+                        android1:textColor="@color/common_note_text"
+                        android1:textSize="32px" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android1:id="@+id/rl_myinfo_curwaistline"
+                    android1:layout_width="fill_parent"
+                    android1:layout_height="105px"
+                    android1:layout_below="@id/rl_myinfo_targetweight"
+                    android1:background="@color/color_white" >
+
+                    <LinearLayout
+                        android1:layout_width="fill_parent"
+                        android1:layout_height="wrap_content"
+                        android1:layout_alignParentTop="true"
+                        android1:background="@drawable/common_separate"
+                        android1:orientation="vertical" >
+                    </LinearLayout>
+
+                    <TextView
+                        android1:id="@+id/TextView15"
+                        android1:layout_width="wrap_content"
+                        android1:layout_height="wrap_content"
+                        android1:layout_alignParentLeft="true"
+                        android1:layout_centerVertical="true"
+                        android1:layout_marginLeft="50px"
+                        android1:text="@string/activity_myinfo_curwaistline"
+                        android1:textColor="@color/common_note_text"
+                        android1:textSize="34px" />
+
+                    <ImageView
+                        android1:id="@+id/ImageView08"
+                        android1:layout_width="25px"
+                        android1:layout_height="45px"
+                        android1:layout_alignParentRight="true"
+                        android1:layout_centerVertical="true"
+                        android1:layout_marginRight="38px"
+                        android1:src="@drawable/common_next" />
+
+                    <TextView
+                        android1:id="@+id/lbl_myinfo_curwaistline"
+                        android1:layout_width="wrap_content"
+                        android1:layout_height="wrap_content"
+                        android1:layout_centerVertical="true"
+                        android1:layout_marginRight="36px"
+                        android1:layout_toLeftOf="@+id/ImageView08"
+                        android1:text="32.4"
+                        android1:textColor="@color/common_note_text"
+                        android1:textSize="32px" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android1:id="@+id/rl_myinfo_targetwaistline"
+                    android1:layout_width="fill_parent"
+                    android1:layout_height="105px"
+                    android1:layout_below="@id/rl_myinfo_curwaistline"
+                    android1:background="@color/color_white" >
+
+                    <LinearLayout
+                        android1:layout_width="fill_parent"
+                        android1:layout_height="wrap_content"
+                        android1:layout_alignParentTop="true"
+                        android1:background="@drawable/common_separate"
+                        android1:orientation="vertical" >
+                    </LinearLayout>
+
+                    <TextView
+                        android1:id="@+id/TextView07"
+                        android1:layout_width="wrap_content"
+                        android1:layout_height="wrap_content"
+                        android1:layout_alignParentLeft="true"
+                        android1:layout_centerVertical="true"
+                        android1:layout_marginLeft="50px"
+                        android1:text="@string/activity_myinfo_targetwaistline"
+                        android1:textColor="@color/common_note_text"
+                        android1:textSize="34px" />
+
+                    <ImageView
+                        android1:id="@+id/ImageView05"
+                        android1:layout_width="25px"
+                        android1:layout_height="45px"
+                        android1:layout_alignParentRight="true"
+                        android1:layout_centerVertical="true"
+                        android1:layout_marginRight="38px"
+                        android1:src="@drawable/common_next" />
+
+                    <TextView
+                        android1:id="@+id/lbl_myinfo_targetwaistline"
+                        android1:layout_width="wrap_content"
+                        android1:layout_height="wrap_content"
+                        android1:layout_centerVertical="true"
+                        android1:layout_marginRight="36px"
+                        android1:layout_toLeftOf="@+id/ImageView05"
+                        android1:text="28.2"
+                        android1:textColor="@color/common_note_text"
+                        android1:textSize="32px" />
+
+                    <LinearLayout
+                        android1:layout_width="fill_parent"
+                        android1:layout_height="wrap_content"
+                        android1:layout_alignParentBottom="true"
+                        android1:background="@drawable/common_separate"
+                        android1:orientation="vertical" >
+                    </LinearLayout>
+                </RelativeLayout>
+
+            </RelativeLayout>
+
+            <LinearLayout
+                android1:layout_width="fill_parent"
+                android1:layout_height="46px"
+                android1:layout_below="@id/rl_myinfo_paragraph3"
+                android1:orientation="vertical" >
+
+            </LinearLayout>
+
+        </RelativeLayout>
+    </ScrollView>
+
+</RelativeLayout>

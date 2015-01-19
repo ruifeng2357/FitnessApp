@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="101px"
+    android:background="@color/color_white" >
+
+    <RelativeLayout
+        android:id="@+id/item_weightinfo_data"
+        android:layout_width="fill_parent"
+        android:layout_height="100px" >
+
+        <TextView
+            android:id="@+id/txt_weightinfo_item_date"
+            android:layout_width="210px"
+            android:layout_height="fill_parent"
+            android:layout_centerVertical="true"
+            android:gravity="center_vertical|center_horizontal"
+            android:text="AAAA"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:textColor="#878787"
+            android:textSize="30px" />
+
+        <TextView
+            android:id="@+id/txt_weightinfo_item_weight"
+            android:layout_width="170px"
+            android:layout_height="fill_parent"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="210px"
+            android:gravity="center_vertical|center_horizontal"
+            android:text="AAAA"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:textColor="#878787"
+            android:textSize="30px" />
+
+        <TextView
+            android:id="@+id/txt_weightinfo_item_waist"
+            android:layout_width="170px"
+            android:layout_height="fill_parent"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="380px"
+            android:gravity="center_vertical|center_horizontal"
+            android:text="TextView"
+            android:textColor="#878787"
+            android:textSize="30px" />
+
+        <TextView
+            android:id="@+id/txt_weightinfo_item_calory"
+            android:layout_width="170px"
+            android:layout_height="fill_parent"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:gravity="center_vertical|center_horizontal"
+            android:text="TextView"
+            android:textColor="#878787"
+            android:textSize="30px" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="1px"
+        android:layout_below="@+id/item_weightinfo_data"
+        android:background="@color/common_list_border" >
+
+    </RelativeLayout>
+
+</RelativeLayout>

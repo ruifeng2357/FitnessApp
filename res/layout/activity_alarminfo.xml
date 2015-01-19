@@ -1,0 +1,813 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/rl_alarminfo"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/common_background"
+    tools:context=".ShengLiZiLiaoActivity" >
+
+    <RelativeLayout
+        android:id="@+id/rl_alarminfo_header"
+        android:layout_width="fill_parent"
+        android:layout_height="95px"
+        android:background="@color/common_titlebar_back" >
+
+        <ImageButton
+            android:id="@+id/imgbtn_alarminfo_back"
+            android:layout_width="55px"
+            android:layout_height="55px"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="20px"
+            android:background="@android:color/transparent"
+            android:scaleType="fitCenter"
+            android:src="@drawable/btn_back" />
+
+        <TextView
+            android:id="@+id/lbl_alarminfo_title"
+            android:layout_width="400px"
+            android:layout_height="match_parent"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:background="@android:color/transparent"
+            android:gravity="center"
+            android:text="@string/activity_alarminfo_title"
+            android:textColor="@android:color/white"
+            android:textSize="@dimen/title_fnt_size" />
+
+        <Button
+            android:id="@+id/btn_alarminfo_save"
+            android:layout_width="112px"
+            android:layout_height="64px"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="24px"
+            android:background="@drawable/btn_transparent"
+            android:text="@string/common_save"
+            android:textColor="@color/color_white"
+            android:textSize="@dimen/normal_fnt_size" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/rl_alarminfo_main"
+        android:layout_width="634px"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/rl_alarminfo_header"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="45px" >
+
+        <RelativeLayout
+            android:id="@+id/rl_alarminfo_repeat"
+            android:layout_width="fill_parent"
+            android:layout_height="106px"
+            android:background="@color/color_white" >
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:background="@drawable/common_separate"
+                android:orientation="vertical" >
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent"
+                android:layout_alignParentLeft="true"
+                android:background="@drawable/common_separator" >
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent"
+                android:layout_alignParentRight="true"
+                android:background="@drawable/common_separator" >
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:background="@drawable/common_separate"
+                android:orientation="vertical" >
+
+            </LinearLayout>
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="33px" >
+
+                <TextView
+                    android:id="@+id/lbl_alarminfo_label1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/activity_alarminfo_repeat"
+                    android:textColor="@color/common_note_text"
+                    android:textSize="34px" />
+
+                <TextView
+                    android:id="@+id/lbl_alarminfo_repeattype"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/lbl_alarminfo_label1"
+                    android:text="只響一次"
+                    android:textColor="#848484"
+                    android:textSize="24px" />
+
+            </RelativeLayout>
+
+            <ImageView
+                android:id="@+id/imageView1"
+                android:layout_width="26px"
+                android:layout_height="45px"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="40px"
+                android:src="@drawable/common_next" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/rl_alarminfo_sound"
+            android:layout_width="fill_parent"
+            android:layout_height="106px"
+            android:layout_below="@id/rl_alarminfo_repeat"
+            android:background="@color/color_white" >
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent"
+                android:layout_alignParentLeft="true"
+                android:background="@drawable/common_separator" >
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent"
+                android:layout_alignParentRight="true"
+                android:background="@drawable/common_separator" >
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:background="@drawable/common_separate"
+                android:orientation="vertical" >
+            </LinearLayout>
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="33px" >
+
+                <TextView
+                    android:id="@+id/TextView02"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/activity_alarminfo_sound"
+                    android:textColor="@color/common_note_text"
+                    android:textSize="34px" />
+
+                <TextView
+                    android:id="@+id/lbl_alarminfo_sound"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/TextView02"
+                    android:text="默認鈴聲"
+                    android:textColor="#848484"
+                    android:textSize="24px" />
+            </RelativeLayout>
+
+            <ImageView
+                android:id="@+id/ImageView01"
+                android:layout_width="26px"
+                android:layout_height="45px"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="40px"
+                android:src="@drawable/common_next" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/rl_alarminfo_vibration"
+            android:layout_width="fill_parent"
+            android:layout_height="106px"
+            android:layout_below="@id/rl_alarminfo_sound"
+            android:background="@color/color_white" >
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent"
+                android:layout_alignParentLeft="true"
+                android:background="@drawable/common_separator" >
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent"
+                android:layout_alignParentRight="true"
+                android:background="@drawable/common_separator" >
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:background="@drawable/common_separate"
+                android:orientation="vertical" >
+            </LinearLayout>
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="33px" >
+
+                <TextView
+                    android:id="@+id/TextView04"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/activity_alarminfo_vibration"
+                    android:textColor="@color/common_note_text"
+                    android:textSize="34px" />
+            </RelativeLayout>
+
+            <ImageView
+                android:id="@+id/img_alarminfo_vibration"
+                android:layout_width="157px"
+                android:layout_height="71px"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="30px"
+                android:src="@drawable/activity_alarm_switchon" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/rl_alarminfo_alarmname"
+            android:layout_width="fill_parent"
+            android:layout_height="106px"
+            android:layout_below="@id/rl_alarminfo_vibration"
+            android:background="@color/color_white" >
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent"
+                android:layout_alignParentLeft="true"
+                android:background="@drawable/common_separator" >
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent"
+                android:layout_alignParentRight="true"
+                android:background="@drawable/common_separator" >
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:background="@drawable/common_separate"
+                android:orientation="vertical" >
+            </LinearLayout>
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="33px" >
+
+                <TextView
+                    android:id="@+id/TextView06"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/activity_alarminfo_alramname"
+                    android:textColor="@color/common_note_text"
+                    android:textSize="34px" />
+            </RelativeLayout>
+
+            <ImageView
+                android:id="@+id/ImageView03"
+                android:layout_width="26px"
+                android:layout_height="45px"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="40px"
+                android:src="@drawable/common_next" />
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/rl_alarminfo_picker"
+        android:layout_width="526px"
+        android:layout_height="506px"
+        android:layout_below="@id/rl_alarminfo_main"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="80px"
+        android:background="@drawable/common_picker_back" >
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="370px"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="16px"
+            android:layout_marginRight="16px" >
+
+            <com.damy.Utils.WheelPicker.WheelView
+                android:id="@+id/wheel_alarminfo_hour"
+                android:layout_width="250px"
+                android:layout_height="fill_parent"
+                android:layout_weight="60" />
+
+            <com.damy.Utils.WheelPicker.WheelView
+                android:id="@+id/wheel_alarminfo_minute"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_toRightOf="@id/wheel_alarminfo_hour"
+                android:layout_weight="60" />
+        </RelativeLayout>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/rl_alarminfo_mask"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:background="@drawable/transparent_back" >
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/rl_alarminfo_repeat_setting1"
+        android:layout_width="570px"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerInParent="true" >
+
+        <RelativeLayout
+            android:id="@+id/rl_alarminfo_repeat_setting1_node1"
+            android:layout_width="fill_parent"
+            android:layout_height="80px"
+            android:background="@color/common_titlebar_back" >
+
+            <TextView
+                android:id="@+id/textView1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="30px"
+                android:text="@string/activity_alarminfo_repeat"
+                android:textColor="@color/color_white"
+                android:textSize="34px" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/rl_alarminfo_repeat_setting1_node2"
+            android:layout_width="fill_parent"
+            android:layout_height="80px"
+            android:layout_below="@id/rl_alarminfo_repeat_setting1_node1"
+            android:background="@color/color_white" >
+
+            <TextView
+                android:id="@+id/TextView01"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:text="@string/alarm_onetime"
+                android:textColor="@color/common_note_text"
+                android:textSize="34px" />
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:background="@drawable/common_separate"
+                android:orientation="vertical" >
+
+            </LinearLayout>
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/rl_alarminfo_repeat_setting1_node3"
+            android:layout_width="fill_parent"
+            android:layout_height="80px"
+            android:layout_below="@id/rl_alarminfo_repeat_setting1_node2"
+            android:background="@color/color_white" >
+
+            <TextView
+                android:id="@+id/TextView03"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:text="@string/alarm_daily"
+                android:textColor="@color/common_note_text"
+                android:textSize="34px" />
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:background="@drawable/common_separate"
+                android:orientation="vertical" >
+            </LinearLayout>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/rl_alarminfo_repeat_setting1_node4"
+            android:layout_width="fill_parent"
+            android:layout_height="80px"
+            android:layout_below="@id/rl_alarminfo_repeat_setting1_node3"
+            android:background="@color/color_white" >
+
+            <TextView
+                android:id="@+id/TextView05"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:text="@string/alarm_5days"
+                android:textColor="@color/common_note_text"
+                android:textSize="34px" />
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:background="@drawable/common_separate"
+                android:orientation="vertical" >
+            </LinearLayout>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/rl_alarminfo_repeat_setting1_node5"
+            android:layout_width="fill_parent"
+            android:layout_height="80px"
+            android:layout_below="@id/rl_alarminfo_repeat_setting1_node4"
+            android:background="@color/color_white" >
+
+            <TextView
+                android:id="@+id/TextView07"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:text="@string/activity_alarminfo_userdefine"
+                android:textColor="@color/common_note_text"
+                android:textSize="34px" />
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:background="@drawable/common_separate"
+                android:orientation="vertical" >
+            </LinearLayout>
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/rl_alarminfo_repeat_setting2"
+        android:layout_width="570px"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:background="@color/color_white" >
+
+        <RelativeLayout
+            android:id="@+id/RelativeLayout01"
+            android:layout_width="fill_parent"
+            android:layout_height="80px"
+            android:background="@color/common_titlebar_back" >
+
+            <TextView
+                android:id="@+id/TextView08"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="30px"
+                android:text="@string/activity_alarminfo_repeat"
+                android:textColor="@color/color_white"
+                android:textSize="34px" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/RelativeLayout08"
+            android:layout_width="fill_parent"
+            android:layout_height="80px"
+            android:layout_below="@+id/RelativeLayout01"
+            android:background="@color/color_white" >
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:background="@drawable/common_separate"
+                android:orientation="vertical" >
+            </LinearLayout>
+
+            <CheckBox
+                android:id="@+id/chk_alarminfo_week1"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="30px"
+                android:layout_marginRight="30px"
+                android:paddingLeft="30px"
+                android:text="@string/common_sun"
+                android:textColor="#848484" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/RelativeLayout04"
+            android:layout_width="fill_parent"
+            android:layout_height="80px"
+            android:layout_below="@+id/RelativeLayout08"
+            android:background="@color/color_white" >
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:background="@drawable/common_separate"
+                android:orientation="vertical" >
+            </LinearLayout>
+
+            <CheckBox
+                android:id="@+id/chk_alarminfo_week2"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="30px"
+                android:layout_marginRight="30px"
+                android:paddingLeft="30px"
+                android:text="@string/common_mon"
+                android:textColor="#848484" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/RelativeLayout03"
+            android:layout_width="fill_parent"
+            android:layout_height="80px"
+            android:layout_below="@+id/RelativeLayout04"
+            android:background="@color/color_white" >
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:background="@drawable/common_separate"
+                android:orientation="vertical" >
+            </LinearLayout>
+
+            <CheckBox
+                android:id="@+id/chk_alarminfo_week3"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="30px"
+                android:layout_marginRight="30px"
+                android:paddingLeft="30px"
+                android:text="@string/common_tue"
+                android:textColor="#848484" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/RelativeLayout06"
+            android:layout_width="fill_parent"
+            android:layout_height="80px"
+            android:layout_below="@+id/RelativeLayout03"
+            android:background="@color/color_white" >
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:background="@drawable/common_separate"
+                android:orientation="vertical" >
+            </LinearLayout>
+
+            <CheckBox
+                android:id="@+id/chk_alarminfo_week4"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="30px"
+                android:layout_marginRight="30px"
+                android:paddingLeft="30px"
+                android:text="@string/common_wed"
+                android:textColor="#848484" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/RelativeLayout05"
+            android:layout_width="fill_parent"
+            android:layout_height="80px"
+            android:layout_below="@+id/RelativeLayout06"
+            android:background="@color/color_white" >
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:background="@drawable/common_separate"
+                android:orientation="vertical" >
+            </LinearLayout>
+
+            <CheckBox
+                android:id="@+id/chk_alarminfo_week5"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="30px"
+                android:layout_marginRight="30px"
+                android:paddingLeft="30px"
+                android:text="@string/common_thr"
+                android:textColor="#848484" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/RelativeLayout02"
+            android:layout_width="fill_parent"
+            android:layout_height="80px"
+            android:layout_below="@+id/RelativeLayout05"
+            android:background="@color/color_white" >
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:background="@drawable/common_separate"
+                android:orientation="vertical" >
+            </LinearLayout>
+
+            <CheckBox
+                android:id="@+id/chk_alarminfo_week6"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="30px"
+                android:layout_marginRight="30px"
+                android:paddingLeft="30px"
+                android:text="@string/common_fri"
+                android:textColor="#848484" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/RelativeLayout07"
+            android:layout_width="fill_parent"
+            android:layout_height="80px"
+            android:layout_below="@+id/RelativeLayout02"
+            android:background="@color/color_white" >
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:background="@drawable/common_separate"
+                android:orientation="vertical" >
+            </LinearLayout>
+
+            <CheckBox
+                android:id="@+id/chk_alarminfo_week7"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="30px"
+                android:layout_marginRight="30px"
+                android:paddingLeft="30px"
+                android:text="@string/common_sat"
+                android:textColor="#848484" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="120px"
+            android:layout_below="@id/RelativeLayout07"
+            android:layout_centerHorizontal="true"
+            android:background="@color/color_white" >
+
+            <Button
+                android:id="@+id/btn_alarminfo_repeat_setting2_ok"
+                android:layout_width="200px"
+                android:layout_height="fill_parent"
+                android:layout_alignParentLeft="true"
+                android:layout_marginBottom="20px"
+                android:layout_marginLeft="50px"
+                android:layout_marginTop="20px"
+                android:background="@drawable/btn_green"
+                android:text="@string/common_ok"
+                android:textColor="@color/color_white"
+                android:textSize="@dimen/button_label_fnt_size" />
+
+            <Button
+                android:id="@+id/btn_alarminfo_repeat_setting2_cancel"
+                android:layout_width="200px"
+                android:layout_height="fill_parent"
+                android:layout_alignParentRight="true"
+                android:layout_marginBottom="20px"
+                android:layout_marginRight="50px"
+                android:layout_marginTop="20px"
+                android:background="@drawable/btn_white"
+                android:text="@string/common_cancel"
+                android:textColor="@color/common_normal_text"
+                android:textSize="@dimen/button_label_fnt_size" />
+
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/rl_alarminfo_alarmname_setting"
+        android:layout_width="570px"
+        android:layout_height="350px"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true" >
+
+        <TextView
+            android:id="@+id/lbl_alarminfo_alarmname_setting_title"
+            android:layout_width="fill_parent"
+            android:layout_height="80px"
+            android:background="@color/common_titlebar_back"
+            android:gravity="center_vertical|center_horizontal"
+            android:text="@string/activity_alarminfo_alramname"
+            android:textColor="@color/color_white"
+            android:textSize="@dimen/title_fnt_size" />
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="380px"
+            android:layout_below="@id/lbl_alarminfo_alarmname_setting_title"
+            android:background="@color/color_white" >
+
+            <RelativeLayout
+                android:id="@+id/rl_alarminfo_alarmname_setting_para1"
+                android:layout_width="450px"
+                android:layout_height="150px"
+                android:layout_centerHorizontal="true" >
+
+                <EditText
+                    android:id="@+id/edit_alarminfo_alarmname_setting_value"
+                    android:layout_width="450px"
+                    android:layout_height="70px"
+                    android:layout_centerHorizontal="true"
+                    android:layout_centerVertical="true"
+                    android:background="@drawable/common_edt_back"
+                    android:ems="10"
+                    android:hint="@string/activity_alarminfo_namehint"
+                    android:paddingLeft="20px"
+                    android:textColor="@color/common_note_text"
+                    android:textColorHint="@color/common_list_border"
+                    android:textSize="@dimen/editbox_fnt_size" >
+
+                    <requestFocus />
+                </EditText>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="450px"
+                android:layout_height="70px"
+                android:layout_below="@id/rl_alarminfo_alarmname_setting_para1"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="10px" >
+
+                <Button
+                    android:id="@+id/btn_alarminfo_alarmname_setting_ok"
+                    android:layout_width="200px"
+                    android:layout_height="fill_parent"
+                    android:layout_alignParentLeft="true"
+                    android:background="@drawable/btn_green"
+                    android:text="@string/common_ok"
+                    android:textColor="@color/color_white"
+                    android:textSize="@dimen/button_label_fnt_size" />
+
+                <Button
+                    android:id="@+id/btn_alarminfo_alarmname_setting_cancel"
+                    android:layout_width="200px"
+                    android:layout_height="fill_parent"
+                    android:layout_alignParentRight="true"
+                    android:background="@drawable/btn_white"
+                    android:text="@string/common_cancel"
+                    android:textColor="@color/common_normal_text"
+                    android:textSize="@dimen/button_label_fnt_size" />
+            </RelativeLayout>
+        </RelativeLayout>
+    </RelativeLayout>
+
+</RelativeLayout>

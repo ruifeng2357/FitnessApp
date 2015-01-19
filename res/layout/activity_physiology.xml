@@ -1,0 +1,419 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/rlMain"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/common_background"
+    tools:context=".ShengLiZiLiaoActivity" >
+
+    <RelativeLayout
+        android:id="@+id/rlHeader"
+        android:layout_width="fill_parent"
+        android:layout_height="95px"
+        android:background="@color/common_titlebar_back2" >
+
+        <ImageButton
+            android:id="@+id/imgbtnBack"
+            android:layout_width="55px"
+            android:layout_height="55px"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="20px"
+            android:background="@android:color/transparent"
+            android:scaleType="fitCenter"
+            android:src="@drawable/btn_back" />
+
+        <TextView
+                android:layout_width="400px"
+                android:layout_height="match_parent"
+                android:background="@android:color/transparent" android:text="@string/physiology_data" android:textColor="@android:color/white"
+                android:textSize="@dimen/title_fnt_size" android:gravity="center" android:id="@+id/lblTitle"
+                android:layout_centerHorizontal="true"/>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/rlLogDate"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/label_height"
+        android:layout_alignParentLeft="false"
+        android:layout_alignParentTop="false"
+        android:layout_below="@+id/rlHeader"
+        android:background="@color/color_white" >
+
+        <TextView
+            android:id="@+id/lblGreeting"
+            android:layout_width="590px"
+            android:layout_height="match_parent"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="65px"
+            android:layout_marginRight="65px"
+            android:gravity="center"
+            android:text=""
+            android:textColor="#878787"
+            android:textSize="36px" />
+
+    </RelativeLayout>
+
+    <ScrollView
+        android:id="@+id/scrollView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/btnSubmitInfo"
+        android:layout_below="@+id/rlLogDate"
+        android:layout_marginBottom="210px" >
+
+        <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent" android:id="@+id/rlScrMain" android:paddingLeft="30px"
+                android:paddingRight="30px">
+
+            <RelativeLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="310px"
+                    android:id="@+id/rlBloodPressure">
+                <TextView
+                        android:layout_width="200px"
+                        android:layout_height="@dimen/label_height"
+                        android:id="@+id/lblBloodPressure"
+                        android:text="@string/blood_pressure" android:textColor="#878787"
+                        android:textSize="@dimen/button_label_fnt_size" android:gravity="center_vertical"
+                        android:layout_marginTop="10px" android:layout_marginLeft="20px"/>
+                <RelativeLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="@dimen/label_height" android:layout_marginLeft="20px"
+                        android:layout_marginTop="100px" android:id="@+id/rlDiastolicPressure"
+                        android:layout_marginRight="20px">
+
+                    <TextView
+                        android:id="@+id/lblDiastolicPressure"
+                        android:layout_width="180px"
+                        android:layout_height="match_parent"
+                        android:gravity="center"
+                        android:text="@string/systolic_pressure"
+                        android:textColor="#878787"
+                        android:textSize="@dimen/button_label_fnt_size" />
+
+                    <EditText
+                        android:id="@+id/txt_high_blood"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_centerVertical="true"
+                        android:layout_toLeftOf="@+id/lblUnit1"
+                        android:layout_toRightOf="@+id/lblDiastolicPressure"
+                        android:background="@drawable/edt_back_02"
+                        android:inputType="number"
+                        android:maxLines="1"
+                        android:padding="15px"
+                        android:singleLine="true"
+                        android:textSize="@dimen/editbox_fnt_size" />
+
+                    <TextView
+                            android:layout_width="160px"
+                            android:layout_height="match_parent"
+                            android:id="@+id/lblUnit1"
+                            android:text="@string/unit_mmhg" android:textColor="#878787"
+                            android:textSize="@dimen/button_label_fnt_size"
+                            android:gravity="center" android:layout_alignParentRight="true"/>
+                </RelativeLayout>
+
+                <RelativeLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="@dimen/label_height" android:layout_marginLeft="20px"
+                        android:layout_marginTop="200px" android:id="@+id/rlSystolicPressure"
+                        android:layout_marginRight="20px">
+
+                    <TextView
+                        android:id="@+id/lblSystolicPressure"
+                        android:layout_width="180px"
+                        android:layout_height="match_parent"
+                        android:gravity="center"
+                        android:text="@string/diastolic_pressure"
+                        android:textColor="#878787"
+                        android:textSize="@dimen/button_label_fnt_size" />
+
+                    <EditText
+                        android:id="@+id/txt_low_blood"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_centerVertical="true"
+                        android:layout_toLeftOf="@+id/lblUnit2"
+                        android:layout_toRightOf="@+id/lblSystolicPressure"
+                        android:background="@drawable/edt_back_02"
+                        android:inputType="number"
+                        android:maxLines="1"
+                        android:padding="15px"
+                        android:singleLine="true"
+                        android:textSize="@dimen/editbox_fnt_size" />
+
+                    <TextView
+                            android:layout_width="160px"
+                            android:layout_height="match_parent"
+                            android:id="@+id/lblUnit2"
+                            android:text="@string/unit_mmhg" android:textColor="#878787"
+                            android:textSize="@dimen/button_label_fnt_size"
+                            android:gravity="center" android:layout_alignParentRight="true"/>
+                </RelativeLayout>
+                <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="2px"
+                        android:id="@+id/imgSeparator1" android:background="@drawable/separator_horizontal"
+                        android:layout_alignParentBottom="true"/>
+            </RelativeLayout>
+
+            <RelativeLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="210px"
+                    android:layout_marginTop="350px"
+                    android:id="@+id/rlBloodGlucose">
+                <RelativeLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="@dimen/label_height" android:layout_marginLeft="20px"
+                        android:id="@+id/rlBloodGlucoseSub"
+                        android:layout_marginRight="20px">
+                    <TextView
+                            android:layout_width="180px"
+                            android:layout_height="match_parent"
+                            android:id="@+id/lblBloodGlucoseSub"
+                            android:text="@string/blood_glucose" android:textColor="#878787"
+                            android:textSize="@dimen/button_label_fnt_size"
+                            android:gravity="center"/>
+
+                    <EditText
+                        android:id="@+id/txt_blood_sugar"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_centerVertical="true"
+                        android:layout_toLeftOf="@+id/lblUnit2"
+                        android:layout_toRightOf="@+id/lblBloodGlucoseSub"
+                        android:background="@drawable/edt_back_02"
+                        android:inputType="number"
+                        android:maxLines="1"
+                        android:padding="15px"
+                        android:singleLine="true"
+                        android:textSize="@dimen/editbox_fnt_size" />
+
+                    <TextView
+                            android:layout_width="160px"
+                            android:layout_height="match_parent"
+                            android:id="@+id/lblUnit2"
+                            android:text="@string/unit_mgpdl" android:textColor="#878787"
+                            android:textSize="@dimen/button_label_fnt_size"
+                            android:gravity="center" android:layout_alignParentRight="true"/>
+                </RelativeLayout>
+
+                <RelativeLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="@dimen/label_height" android:layout_marginLeft="20px"
+                        android:layout_marginTop="100px" android:id="@+id/rlIsStomachEmpty"
+                        android:layout_marginRight="20px">
+                    <TextView
+                            android:layout_width="290px"
+                            android:layout_height="match_parent"
+                            android:id="@+id/lblIsStomachEmpty"
+                            android:text="@string/is_stomach_empty" android:textColor="#878787" android:gravity="center"
+                            android:textSize="@dimen/button_label_fnt_size"/>
+                    <RadioGroup
+                            android:layout_width="fill_parent"
+                            android:layout_height="fill_parent" android:layout_toRightOf="@+id/lblIsStomachEmpty"
+                            android:id="@+id/rgrpIsStomachEmpty" android:layout_centerVertical="true" android:orientation="horizontal"
+                            android:gravity="center" android:checkedButton="0" android:baselineAligned="false">
+
+                        <RadioButton
+                            android:id="@+id/rd_empty_yes"
+                            android:layout_width="100px"
+                            android:layout_height="50px"
+                            android:button="@drawable/radio"
+                            android:checked="true"
+                            android:enabled="true"
+                            android:gravity="center_vertical"
+                            android:paddingLeft="10px"
+                            android:text="@string/yes"
+                            android:textColor="#878787"
+                            android:textSize="@dimen/button_label_fnt_size" />
+
+                        <RadioButton
+                            android:id="@+id/rd_empty_no"
+                            android:layout_width="100px"
+                            android:layout_height="50px"
+                            android:layout_marginLeft="50px"
+                            android:layout_marginRight="40px"
+                            android:button="@drawable/radio"
+                            android:enabled="true"
+                            android:gravity="center_vertical"
+                            android:paddingLeft="10px"
+                            android:text="@string/no"
+                            android:textColor="#878787"
+                            android:textSize="@dimen/button_label_fnt_size" />
+
+                    </RadioGroup>
+                </RelativeLayout>
+                <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="2px"
+                        android:id="@+id/imgSeparator2" android:background="@drawable/separator_horizontal"
+                        android:layout_alignParentBottom="true"/>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/rlFatProtein"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="560px" >
+
+                <RelativeLayout
+                    android:id="@+id/rlCholesterol"
+                    android:layout_width="fill_parent"
+                    android:layout_height="@dimen/label_height"
+                    android:layout_marginLeft="20px"
+                    android:layout_marginRight="20px"
+                    android:layout_marginTop="40px" >
+
+                    <TextView
+                        android:id="@+id/lblCholesterol"
+                        android:layout_width="260px"
+                        android:layout_height="match_parent"
+                        android:gravity="center"
+                        android:text="高密度脂蛋白膽固醇"
+                        android:textColor="#878787"
+                        android:textSize="28px" />
+
+                    <EditText
+                        android:id="@+id/txt_high_cholesterol"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="20px"
+                        android:layout_toLeftOf="@+id/lblUnit3"
+                        android:layout_toRightOf="@+id/lblCholesterol"
+                        android:background="@drawable/common_edt_back"
+                        android:inputType="number"
+                        android:maxLines="1"
+                        android:padding="15px"
+                        android:singleLine="true"
+                        android:textSize="@dimen/editbox_fnt_size" />
+
+                    <TextView
+                            android:layout_width="160px"
+                            android:layout_height="match_parent"
+                            android:id="@+id/lblUnit3"
+                            android:text="@string/unit_mgpdl" android:textColor="#878787"
+                            android:textSize="@dimen/button_label_fnt_size"
+                            android:gravity="center" android:layout_alignParentRight="true"/>
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/rlCholesterol2"
+                    android:layout_width="fill_parent"
+                    android:layout_height="@dimen/label_height"
+                    android:layout_marginLeft="20px"
+                    android:layout_marginRight="20px"
+                    android:layout_marginTop="160px" >
+
+                    <TextView
+                        android:id="@+id/lblCholesterol2"
+                        android:layout_width="260px"
+                        android:layout_height="match_parent"
+                        android:gravity="center"
+                        android:text="低密度脂蛋白膽固醇"
+                        android:textColor="#878787"
+                        android:textSize="28px" />
+
+                    <EditText
+                        android:id="@+id/txt_low_cholesterol"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="20px"
+                        android:layout_toLeftOf="@+id/lblUnit4"
+                        android:layout_toRightOf="@+id/lblCholesterol2"
+                        android:background="@drawable/edt_back_02"
+                        android:inputType="number"
+                        android:maxLines="1"
+                        android:padding="15px"
+                        android:singleLine="true"
+                        android:textSize="@dimen/editbox_fnt_size" />
+
+                    <TextView
+                            android:layout_width="160px"
+                            android:layout_height="match_parent"
+                            android:id="@+id/lblUnit4"
+                            android:text="@string/unit_mgpdl" android:textColor="#878787"
+                            android:textSize="@dimen/button_label_fnt_size"
+                            android:gravity="center" android:layout_alignParentRight="true"/>
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/rlGlycerin"
+                    android:layout_width="fill_parent"
+                    android:layout_height="@dimen/label_height"
+                    android:layout_marginLeft="20px"
+                    android:layout_marginRight="20px"
+                    android:layout_marginTop="280px" >
+
+                    <TextView
+                        android:id="@+id/lblFat"
+                        android:layout_width="260px"
+                        android:layout_height="match_parent"
+                        android:gravity="right|center_vertical"
+                        android:text="三酸甘油酯"
+                        android:textColor="#878787"
+                        android:textSize="28px" />
+
+                    <EditText
+                        android:id="@+id/txt_glyceride"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="20px"
+                        android:layout_toLeftOf="@+id/lblUnit5"
+                        android:layout_toRightOf="@+id/lblFat"
+                        android:background="@drawable/edt_back_02"
+                        android:inputType="number"
+                        android:maxLines="1"
+                        android:padding="15px"
+                        android:singleLine="true"
+                        android:textSize="@dimen/editbox_fnt_size" />
+
+                    <TextView
+                            android:layout_width="160px"
+                            android:layout_height="match_parent"
+                            android:id="@+id/lblUnit5"
+                            android:text="@string/unit_mgpdl" android:textColor="#878787"
+                            android:textSize="@dimen/button_label_fnt_size"
+                            android:gravity="center" android:layout_alignParentRight="true"/>
+                </RelativeLayout>
+
+            </RelativeLayout>
+
+            <TextView
+                android:id="@+id/lbl_physiology_description"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/rlFatProtein"
+                android:layout_marginTop="60px"
+                android:background="@color/color_white"
+                android:paddingBottom="10px"
+                android:paddingLeft="20px"
+                android:paddingRight="20px"
+                android:paddingTop="10px"
+                android:textColor="@color/common_lightgray"
+                android:textSize="@dimen/editbox_fnt_size" />
+
+        </RelativeLayout>
+    </ScrollView>
+
+    <Button
+        android:id="@+id/btn_save_physiology"
+        android:layout_width="527px"
+        android:layout_height="89px"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="60px"
+        android:layout_marginLeft="95px"
+        android:background="@drawable/btn_green_01"
+        android:text="@string/submit_info"
+        android:textColor="@android:color/white"
+        android:textSize="@dimen/button_label_fnt_size"
+        android:textStyle="bold" />
+
+</RelativeLayout>

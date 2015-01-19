@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/color_white" >
+
+    <RelativeLayout
+        android:id="@+id/item_question_data"
+        android:layout_width="fill_parent"
+        android:layout_height="104px" >
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="38px" >
+
+            <TextView
+                android:id="@+id/txt_q_item_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="零反弹瘦腿操5招塑美麗"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:textColor="@color/common_note_text"
+                android:textSize="30px" />
+
+            <TextView
+                android:id="@+id/txt_q_item_date"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/txt_q_item_title"
+                android:layout_marginTop="5px"
+                android:text="2014-08-28"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:textColor="@color/common_note_text"
+                android:textSize="24px" />
+        </RelativeLayout>
+
+        <ImageView
+            android:id="@+id/img_forward"
+            android:layout_width="26px"
+            android:layout_height="45px"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="38px"
+            android:background="@android:color/transparent"
+            android:scaleType="fitCenter"
+            android:src="@drawable/common_next" />
+
+        <TextView
+            android:id="@+id/txt_bage_view"
+            android:layout_width="50px"
+            android:layout_height="50px"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="20px"
+            android:layout_toLeftOf="@id/img_forward"
+            android:background="@drawable/activity_questionlist_badgeback"
+            android:gravity="center_vertical|center_horizontal"
+            android:text="3"
+            android:textSize="@dimen/medium_fnt_size" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="1px"
+        android:layout_below="@+id/item_question_data"
+        android:background="@drawable/common_separate" >
+
+    </RelativeLayout>
+
+</RelativeLayout>

@@ -1,0 +1,504 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:android1="http://schemas.android.com/apk/res/android"
+    android:id="@+id/rl_myhealthstatus"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android1:background="@drawable/common_background"
+    tools:context=".LoginActivity" >
+
+    <RelativeLayout
+        android1:id="@+id/rl_myhealthstatus_header"
+        android1:layout_width="fill_parent"
+        android1:layout_height="95px"
+        android1:layout_alignParentLeft="true"
+        android1:layout_alignParentTop="true"
+        android1:background="#00a086" >
+
+        <ImageButton
+            android1:id="@+id/imgbtn_myhealthstatus_back"
+            android1:layout_width="55px"
+            android1:layout_height="55px"
+            android1:layout_centerVertical="true"
+            android1:layout_marginLeft="20px"
+            android1:background="@android:color/transparent"
+            android1:scaleType="fitCenter"
+            android1:src="@drawable/btn_back" />
+
+        <TextView
+            android1:id="@+id/lbl_myhealthstatus_title"
+            android1:layout_width="400px"
+            android1:layout_height="match_parent"
+            android1:layout_centerHorizontal="true"
+            android1:background="@android:color/transparent"
+            android1:gravity="center"
+            android1:text="@string/activity_myhealthstatus_title"
+            android1:textColor="@android:color/white"
+            android1:textSize="@dimen/title_fnt_size" />
+    </RelativeLayout>
+
+    <ScrollView
+        android1:id="@+id/scrollView1"
+        android1:layout_width="fill_parent"
+        android1:layout_height="wrap_content"
+        android1:layout_below="@id/rl_myhealthstatus_header" >
+
+        <RelativeLayout
+            android1:id="@+id/RelativeLayout1"
+            android1:layout_width="fill_parent"
+            android1:layout_height="wrap_content"
+            android1:orientation="vertical" >
+
+            <RelativeLayout
+                android1:id="@+id/rl_myhealthstatus_paragraph1"
+                android1:layout_width="663px"
+                android1:layout_height="wrap_content"
+                android1:layout_alignParentTop="true"
+                android1:layout_centerHorizontal="true"
+                android1:layout_marginTop="32px" >
+
+                <RelativeLayout
+                    android1:id="@+id/rl_myhealthstatus_caption1"
+                    android1:layout_width="fill_parent"
+                    android1:layout_height="wrap_content"
+                    android1:layout_alignParentTop="true" >
+
+                    <ImageView
+                        android1:id="@+id/img_myhealthstatus_dot1"
+                        android1:layout_width="16px"
+                        android1:layout_height="16px"
+                        android1:layout_alignParentLeft="true"
+                        android1:layout_centerVertical="true"
+                        android1:layout_marginLeft="10px"
+                        android1:src="@drawable/common_dot1" />
+
+                    <TextView
+                        android1:id="@+id/textView1"
+                        android1:layout_width="wrap_content"
+                        android1:layout_height="wrap_content"
+                        android1:layout_marginLeft="20px"
+                        android1:layout_toRightOf="@id/img_myhealthstatus_dot1"
+                        android1:text="@string/activity_myhealthstatus_bodystatus"
+                        android1:textColor="@color/common_note_text"
+                        android1:textSize="30px" />
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android1:id="@+id/rl_myhealthstatus_note1"
+                    android1:layout_width="fill_parent"
+                    android1:layout_height="wrap_content"
+                    android1:layout_below="@id/rl_myhealthstatus_caption1"
+                    android1:layout_marginTop="28px" >
+
+                    <ImageView
+                        android1:id="@+id/img_myhealthstatus_body"
+                        android1:layout_width="104px"
+                        android1:layout_height="251px"
+                        android1:layout_alignParentLeft="true"
+                        android1:layout_marginLeft="40px"
+                        android1:src="@drawable/activity_myhealthstatus_body" />
+
+                    <RelativeLayout
+                        android1:layout_width="wrap_content"
+                        android1:layout_height="251px"
+                        android1:layout_marginLeft="126px"
+                        android1:layout_toRightOf="@id/img_myhealthstatus_body" >
+
+                        <RelativeLayout
+                            android1:id="@+id/rl_myhealthstatus_bmi"
+                            android1:layout_width="fill_parent"
+                            android1:layout_height="40px" >
+
+                            <ImageView
+                                android1:id="@+id/img_myhealthstatus_dot2"
+                                android1:layout_width="16px"
+                                android1:layout_height="16px"
+                                android1:layout_centerVertical="true"
+                                android1:src="@drawable/common_dot1" />
+
+                            <TextView
+                                android1:id="@+id/lbl_myhealthstatus_bmi"
+                                android1:layout_width="wrap_content"
+                                android1:layout_height="wrap_content"
+                                android1:layout_centerVertical="true"
+                                android1:layout_marginLeft="20px"
+                                android1:layout_toRightOf="@id/img_myhealthstatus_dot2"
+                                android1:text="BMI：27.9"
+                                android1:textColor="@color/common_note_text"
+                                android1:textSize="28px" />
+
+                            <TextView
+                                android1:id="@+id/lbl_myhealthstatus_bmi_note"
+                                android1:layout_width="102px"
+                                android1:layout_height="40px"
+                                android1:layout_alignParentRight="true"
+                                android1:layout_marginRight="50px"
+                                android1:background="@drawable/activity_myhealthstatus_badge"
+                                android1:gravity="center_vertical|center_horizontal"
+                                android1:text="@string/activity_myhealthstatus_badge"
+                                android1:textColor="@color/color_white"
+                                android1:textSize="18px" />
+
+                        </RelativeLayout>
+
+                        <RelativeLayout
+                            android1:id="@+id/rl_myhealthstatus_age"
+                            android1:layout_width="fill_parent"
+                            android1:layout_height="40px"
+                            android1:layout_below="@id/rl_myhealthstatus_bmi"
+                            android1:layout_marginTop="30px" >
+
+                            <ImageView
+                                android1:id="@+id/img_myhealthstatus_dot3"
+                                android1:layout_width="16px"
+                                android1:layout_height="16px"
+                                android1:layout_centerVertical="true"
+                                android1:src="@drawable/common_dot1" />
+
+                            <TextView
+                                android1:id="@+id/lbl_myhealthstatus_age"
+                                android1:layout_width="wrap_content"
+                                android1:layout_height="wrap_content"
+                                android1:layout_centerVertical="true"
+                                android1:layout_marginLeft="20px"
+                                android1:layout_toRightOf="@id/img_myhealthstatus_dot3"
+                                android1:text="年齡：26岁"
+                                android1:textColor="@color/common_note_text"
+                                android1:textSize="28px" />
+                        </RelativeLayout>
+
+                        <RelativeLayout
+                            android1:id="@+id/rl_myhealthstatus_weight"
+                            android1:layout_width="fill_parent"
+                            android1:layout_height="40px"
+                            android1:layout_below="@id/rl_myhealthstatus_age"
+                            android1:layout_marginTop="30px" >
+
+                            <ImageView
+                                android1:id="@+id/ImageView01"
+                                android1:layout_width="16px"
+                                android1:layout_height="16px"
+                                android1:layout_centerVertical="true"
+                                android1:src="@drawable/common_dot1" />
+
+                            <TextView
+                                android1:id="@+id/lbl_myhealthstatus_weight"
+                                android1:layout_width="wrap_content"
+                                android1:layout_height="wrap_content"
+                                android1:layout_centerVertical="true"
+                                android1:layout_marginLeft="20px"
+                                android1:layout_toRightOf="@+id/ImageView01"
+                                android1:text="體重：76.0kg"
+                                android1:textColor="@color/common_note_text"
+                                android1:textSize="28px" />
+                        </RelativeLayout>
+
+                        <RelativeLayout
+                            android1:id="@+id/rl_myhealthstatus_height"
+                            android1:layout_width="fill_parent"
+                            android1:layout_height="40px"
+                            android1:layout_alignParentBottom="true"
+                            android1:layout_marginTop="30px" >
+
+                            <ImageView
+                                android1:id="@+id/ImageView02"
+                                android1:layout_width="16px"
+                                android1:layout_height="16px"
+                                android1:layout_centerVertical="true"
+                                android1:src="@drawable/common_dot1" />
+
+                            <TextView
+                                android1:id="@+id/lbl_myhealthstatus_height"
+                                android1:layout_width="wrap_content"
+                                android1:layout_height="wrap_content"
+                                android1:layout_centerVertical="true"
+                                android1:layout_marginLeft="20px"
+                                android1:layout_toRightOf="@+id/ImageView02"
+                                android1:text="身高：165cm"
+                                android1:textColor="@color/common_note_text"
+                                android1:textSize="28px" />
+                        </RelativeLayout>
+
+                    </RelativeLayout>
+
+                </RelativeLayout>
+
+                <ImageView
+                    android1:id="@+id/imageView1"
+                    android1:layout_width="663px"
+                    android1:layout_height="2px"
+                    android1:layout_below="@id/rl_myhealthstatus_note1"
+                    android1:layout_marginTop="63px"
+                    android1:background="@drawable/activity_myhealthstatus_separate" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android1:id="@+id/rl_myhealthstatus_paragraph2"
+                android1:layout_width="663px"
+                android1:layout_height="wrap_content"
+                android1:layout_below="@id/rl_myhealthstatus_paragraph1"
+                android1:layout_centerHorizontal="true"
+                android1:layout_marginTop="30px" >
+
+                <RelativeLayout
+                    android1:id="@+id/rl_myhealthstatus_caption2"
+                    android1:layout_width="fill_parent"
+                    android1:layout_height="wrap_content" >
+
+                    <ImageView
+                        android1:id="@+id/ImageView03"
+                        android1:layout_width="16px"
+                        android1:layout_height="16px"
+                        android1:layout_alignParentLeft="true"
+                        android1:layout_centerVertical="true"
+                        android1:layout_marginLeft="10px"
+                        android1:src="@drawable/common_dot1" />
+
+                    <TextView
+                        android1:id="@+id/TextView04"
+                        android1:layout_width="wrap_content"
+                        android1:layout_height="wrap_content"
+                        android1:layout_marginLeft="20px"
+                        android1:layout_toRightOf="@+id/ImageView03"
+                        android1:text="@string/activity_myhealthstatus_sample"
+                        android1:textColor="@color/common_note_text"
+                        android1:textSize="30px" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android1:id="@+id/rl_myhealthstatus_note2"
+                    android1:layout_width="fill_parent"
+                    android1:layout_height="wrap_content"
+                    android1:layout_below="@id/rl_myhealthstatus_caption2"
+                    android1:layout_marginTop="44px" >
+
+                    <RelativeLayout
+                        android1:id="@+id/rl_myhealthstatus_targetweight"
+                        android1:layout_width="180px"
+                        android1:layout_height="wrap_content"
+                        android1:layout_alignParentLeft="true"
+                        android1:layout_marginLeft="320px" >
+
+                        <TextView
+                            android1:id="@+id/lbl_myhealthstatus_targetweight"
+                            android1:layout_width="wrap_content"
+                            android1:layout_height="wrap_content"
+                            android1:layout_centerHorizontal="true"
+                            android1:text="目标58.0kg"
+                            android1:textColor="@color/common_note_text"
+                            android1:textSize="26px" />
+
+                        <ImageView
+                            android1:id="@+id/imageView2"
+                            android1:layout_width="38px"
+                            android1:layout_height="49px"
+                            android1:layout_below="@id/lbl_myhealthstatus_targetweight"
+                            android1:layout_centerHorizontal="true"
+                            android1:layout_marginTop="5px"
+                            android1:src="@drawable/activity_myhealthstatus_mark1" />
+
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android1:id="@+id/rl_myhealthstatus_linebar"
+                        android1:layout_width="626px"
+                        android1:layout_height="27px"
+                        android1:layout_below="@id/rl_myhealthstatus_targetweight"
+                        android1:layout_centerHorizontal="true" >
+
+                        <RelativeLayout
+                            android1:id="@+id/rl_myhealthstatus_line1"
+                            android1:layout_width="50px"
+                            android1:layout_height="fill_parent"
+                            android1:background="#13e4c2" >
+                        </RelativeLayout>
+
+                        <RelativeLayout
+                            android1:id="@+id/rl_myhealthstatus_line2"
+                            android1:layout_width="50px"
+                            android1:layout_height="fill_parent"
+                            android1:layout_toRightOf="@id/rl_myhealthstatus_line1"
+                            android1:background="#07b99c" >
+                        </RelativeLayout>
+
+                        <RelativeLayout
+                            android1:id="@+id/rl_myhealthstatus_line3"
+                            android1:layout_width="50px"
+                            android1:layout_height="fill_parent"
+                            android1:layout_toRightOf="@id/rl_myhealthstatus_line2"
+                            android1:background="#00a086" >
+                        </RelativeLayout>
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android1:id="@+id/rl_myhealthstatus_currentweight"
+                        android1:layout_width="220px"
+                        android1:layout_height="wrap_content"
+                        android1:layout_below="@id/rl_myhealthstatus_linebar"
+                        android1:layout_marginLeft="160px" >
+
+                        <ImageView
+                            android1:id="@+id/img_myhealthstatus_currentweight"
+                            android1:layout_width="38px"
+                            android1:layout_height="49px"
+                            android1:layout_centerHorizontal="true"
+                            android1:layout_marginTop="5px"
+                            android1:src="@drawable/activity_myhealthstatus_mark2" />
+
+                        <TextView
+                            android1:id="@+id/lbl_myhealthstatus_currentweight"
+                            android1:layout_width="wrap_content"
+                            android1:layout_height="wrap_content"
+                            android1:layout_below="@id/img_myhealthstatus_currentweight"
+                            android1:layout_centerHorizontal="true"
+                            android1:text="当前体重76.0公分"
+                            android1:textColor="@color/common_note_text"
+                            android1:textSize="26px" />
+
+                    </RelativeLayout>
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android1:id="@+id/RelativeLayout02"
+                    android1:layout_width="fill_parent"
+                    android1:layout_height="wrap_content"
+                    android1:layout_below="@id/rl_myhealthstatus_note2"
+                    android1:layout_marginTop="10px" >
+
+                    <ImageView
+                        android1:id="@+id/ImageView04"
+                        android1:layout_width="16px"
+                        android1:layout_height="16px"
+                        android1:layout_alignParentLeft="true"
+                        android1:layout_centerVertical="true"
+                        android1:layout_marginLeft="30px"
+                        android1:src="@drawable/common_dot1" />
+
+                    <TextView
+                        android1:id="@+id/TextView05"
+                        android1:layout_width="wrap_content"
+                        android1:layout_height="wrap_content"
+                        android1:layout_alignParentLeft="true"
+                        android1:layout_marginLeft="55px"
+                        android1:text="@string/activity_myhealthstatus_bminote1"
+                        android1:textColor="@color/common_note_text"
+                        android1:textSize="26px" />
+
+                    <ImageView
+                        android1:id="@+id/ImageView05"
+                        android1:layout_width="16px"
+                        android1:layout_height="16px"
+                        android1:layout_alignParentLeft="true"
+                        android1:layout_centerVertical="true"
+                        android1:layout_marginLeft="150px"
+                        android1:src="@drawable/common_dot2" />
+
+                    <TextView
+                        android1:id="@+id/TextView06"
+                        android1:layout_width="wrap_content"
+                        android1:layout_height="wrap_content"
+                        android1:layout_marginLeft="175px"
+                        android1:text="@string/activity_myhealthstatus_bminote2"
+                        android1:textColor="@color/common_note_text"
+                        android1:textSize="26px" />
+
+                    <ImageView
+                        android1:id="@+id/ImageView06"
+                        android1:layout_width="16px"
+                        android1:layout_height="16px"
+                        android1:layout_alignParentLeft="true"
+                        android1:layout_centerVertical="true"
+                        android1:layout_marginLeft="270px"
+                        android1:src="@drawable/common_dot3" />
+
+                    <TextView
+                        android1:id="@+id/TextView07"
+                        android1:layout_width="wrap_content"
+                        android1:layout_height="wrap_content"
+                        android1:layout_alignParentLeft="true"
+                        android1:layout_marginLeft="295px"
+                        android1:text="@string/activity_myhealthstatus_bminote3"
+                        android1:textColor="@color/common_note_text"
+                        android1:textSize="26px" />
+
+                </RelativeLayout>
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android1:id="@+id/rl_myhealthstatus_paragraph3"
+                android1:layout_width="663px"
+                android1:layout_height="wrap_content"
+                android1:layout_below="@id/rl_myhealthstatus_paragraph2"
+                android1:layout_centerHorizontal="true"
+                android1:layout_marginTop="100px" >
+
+                <RelativeLayout
+                    android1:id="@+id/RelativeLayout03"
+                    android1:layout_width="fill_parent"
+                    android1:layout_height="wrap_content" >
+
+                    <ImageView
+                        android1:id="@+id/ImageView11"
+                        android1:layout_width="216px"
+                        android1:layout_height="195px"
+                        android1:layout_alignParentLeft="true"
+                        android1:layout_marginLeft="70px"
+                        android1:src="@drawable/activity_myhealthstatus_waistline" />
+
+                    <RelativeLayout
+                        android1:layout_width="wrap_content"
+                        android1:layout_height="195px"
+                        android1:layout_marginLeft="62px"
+                        android1:layout_toRightOf="@+id/ImageView11" >
+
+                        <TextView
+                            android1:id="@+id/lbl_myhealthstatus_targetwaistline"
+                            android1:layout_width="wrap_content"
+                            android1:layout_height="wrap_content"
+                            android1:layout_alignParentLeft="true"
+                            android1:layout_alignParentTop="true"
+                            android1:layout_marginTop="90px"
+                            android1:text="目標：70cm"
+                            android1:textColor="@color/common_note_text"
+                            android1:textSize="26px" />
+
+                        <TextView
+                            android1:id="@+id/lbl_myhealthstatus_currentwaistline"
+                            android1:layout_width="wrap_content"
+                            android1:layout_height="wrap_content"
+                            android1:layout_below="@id/lbl_myhealthstatus_targetwaistline"
+                            android1:layout_marginTop="30px"
+                            android1:text="當前腰圍：90cm"
+                            android1:textColor="@color/common_note_text"
+                            android1:textSize="26px" />
+
+                    </RelativeLayout>
+                </RelativeLayout>
+            </RelativeLayout>
+
+            <Button
+                android1:id="@+id/btn_myhealthstatus_next"
+                android1:layout_width="527px"
+                android1:layout_height="90px"
+                android1:layout_below="@id/rl_myhealthstatus_paragraph3"
+                android1:layout_centerHorizontal="true"
+                android1:layout_marginTop="94px"
+                android1:background="@drawable/btn_green"
+                android1:text="@string/activity_targetwaistline_btn_next"
+                android1:textColor="@color/color_white"
+                android1:textSize="@dimen/button_label_fnt_size" />
+
+            <TextView
+                android1:id="@+id/textView3"
+                android1:layout_width="fill_parent"
+                android1:layout_height="58px"
+                android1:layout_below="@id/btn_myhealthstatus_next" />
+
+        </RelativeLayout>
+    </ScrollView>
+
+</RelativeLayout>

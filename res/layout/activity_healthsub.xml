@@ -1,0 +1,41 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/rl_healthsub"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/common_background"
+    tools:context=".ShengLiZiLiaoActivity" >
+
+    <RelativeLayout
+        android:id="@+id/rl_healthsub_header"
+        android:layout_width="fill_parent"
+        android:layout_height="95px"
+        android:background="@color/common_titlebar_back5" >
+
+        <ImageButton
+            android:id="@+id/img_healthsub_back"
+            android:layout_width="55px"
+            android:layout_height="55px"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="20px"
+            android:background="@android:color/transparent"
+            android:scaleType="fitCenter"
+            android:src="@drawable/btn_back" />
+
+        <TextView
+            android:id="@+id/lbl_health_title"
+            android:layout_width="400px"
+            android:layout_height="match_parent"
+            android:layout_centerHorizontal="true"
+            android:background="@android:color/transparent"
+            android:gravity="center"
+            android:text="@string/activity_healthvideolist_title1"
+            android:textColor="@android:color/white"
+            android:textSize="@dimen/title_fnt_size" />
+    </RelativeLayout>
+    <view android:layout_width="match_parent"
+          android:layout_height="match_parent"
+          class="com.google.android.youtube.player.YouTubePlayerView" android:id="@+id/youtube_view"
+          android:layout_below="@+id/rl_healthsub_header"/>
+
+</RelativeLayout>

@@ -1,0 +1,246 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:android1="http://schemas.android.com/apk/res/android"
+    android:id="@+id/rl_sportrecord"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android1:background="@drawable/common_background"
+    tools:context=".LoginActivity" >
+
+    <RelativeLayout
+        android1:id="@+id/rl_sportrecord_header"
+        android1:layout_width="fill_parent"
+        android1:layout_height="95px"
+        android1:layout_alignParentLeft="true"
+        android1:layout_alignParentTop="true"
+        android1:background="@color/common_titlebar_back3" >
+
+        <ImageButton
+            android1:id="@+id/imgbtn_sportrecord_back"
+            android1:layout_width="55px"
+            android1:layout_height="55px"
+            android1:layout_centerVertical="true"
+            android1:layout_marginLeft="20px"
+            android1:background="@android:color/transparent"
+            android1:scaleType="fitCenter"
+            android1:src="@drawable/btn_back" />
+
+        <TextView
+            android1:id="@+id/lbl_sportrecord_title"
+            android1:layout_width="400px"
+            android1:layout_height="match_parent"
+            android1:layout_centerHorizontal="true"
+            android1:background="@android:color/transparent"
+            android1:gravity="center"
+            android1:text="@string/activity_sportrecord_title"
+            android1:textColor="@android:color/white"
+            android1:textSize="@dimen/title_fnt_size" />
+
+        <ImageButton
+            android1:id="@+id/imgbtn_sportrecord_facebook"
+            android1:layout_width="49px"
+            android1:layout_height="49px"
+            android1:layout_alignParentRight="true"
+            android1:layout_centerVertical="true"
+            android1:layout_marginRight="32px"
+            android1:background="@android:color/transparent"
+            android1:scaleType="fitCenter"
+            android1:src="@drawable/btn_facebook_tab" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android1:id="@+id/rl_sportrecord_dateselect"
+        android1:layout_width="fill_parent"
+        android1:layout_height="84px"
+        android1:layout_below="@id/rl_sportrecord_header"
+        android1:background="@color/color_white" >
+
+        <TextView
+            android1:id="@+id/lbl_sportrecord_date"
+            android1:layout_width="170px"
+            android1:layout_height="wrap_content"
+            android1:layout_centerHorizontal="true"
+            android1:layout_centerVertical="true"
+            android1:gravity="center_vertical|center_horizontal"
+            android1:text="2014-9-25"
+            android1:textColor="@color/common_note_text"
+            android1:textSize="30px" />
+
+        <ImageView
+            android1:id="@+id/img_sportrecord_datedown"
+            android1:layout_width="40px"
+            android1:layout_height="40px"
+            android1:layout_centerVertical="true"
+            android1:layout_marginRight="20px"
+            android1:layout_toLeftOf="@id/lbl_sportrecord_date"
+            android1:src="@drawable/tri_left" />
+
+        <ImageView
+            android1:id="@+id/img_sportrecord_dateup"
+            android1:layout_width="40px"
+            android1:layout_height="40px"
+            android1:layout_centerVertical="true"
+            android1:layout_marginLeft="20px"
+            android1:layout_toRightOf="@id/lbl_sportrecord_date"
+            android1:src="@drawable/tri_right" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android1:id="@+id/rl_sportrecord_total"
+        android1:layout_width="fill_parent"
+        android1:layout_height="94px"
+        android1:layout_below="@id/rl_sportrecord_dateselect"
+        android1:background="#f9f9f9" >
+
+        <ImageView
+            android1:id="@+id/img_sportrecord_sport"
+            android1:layout_width="62px"
+            android1:layout_height="62px"
+            android1:layout_alignParentLeft="true"
+            android1:layout_centerVertical="true"
+            android1:layout_marginLeft="50px"
+            android1:src="@drawable/common_sport" />
+
+        <TextView
+            android1:id="@+id/lbl_sportrecord_sportcaption"
+            android1:layout_width="wrap_content"
+            android1:layout_height="wrap_content"
+            android1:layout_centerVertical="true"
+            android1:layout_marginLeft="30px"
+            android1:layout_toRightOf="@id/img_sportrecord_sport"
+            android1:text="@string/activity_sportrecord_sport"
+            android1:textColor="@color/common_note_text"
+            android1:textSize="30px" />
+
+        <TextView
+            android1:id="@+id/lbl_sportrecord_totalvalue"
+            android1:layout_width="60px"
+            android1:layout_height="wrap_content"
+            android1:layout_centerVertical="true"
+            android1:layout_marginLeft="15px"
+            android1:layout_toRightOf="@id/lbl_sportrecord_sportcaption"
+            android1:gravity="right"
+            android1:text="0"
+            android1:textColor="#bbbbbb"
+            android1:textSize="24px" />
+
+        <TextView
+            android1:id="@+id/TextView08"
+            android1:layout_width="wrap_content"
+            android1:layout_height="wrap_content"
+            android1:layout_centerVertical="true"
+            android1:layout_marginLeft="10px"
+            android1:layout_toRightOf="@id/lbl_sportrecord_totalvalue"
+            android1:gravity="right"
+            android1:text="kcal"
+            android1:textColor="#bbbbbb"
+            android1:textSize="24px" />
+
+        <ImageView
+            android1:id="@+id/img_sportrecord_plus"
+            android1:layout_width="50px"
+            android1:layout_height="50px"
+            android1:layout_alignParentRight="true"
+            android1:layout_centerVertical="true"
+            android1:layout_marginRight="44px"
+            android1:src="@drawable/common_plus_whitegreen" />
+
+        <LinearLayout
+            android1:layout_width="fill_parent"
+            android1:layout_height="wrap_content"
+            android1:layout_alignParentTop="true"
+            android1:background="@drawable/common_separate"
+            android1:orientation="vertical" >
+        </LinearLayout>
+
+        <LinearLayout
+            android1:layout_width="fill_parent"
+            android1:layout_height="wrap_content"
+            android1:layout_alignParentBottom="true"
+            android1:background="@drawable/common_separate"
+            android1:orientation="vertical" >
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+    <ListView
+        android1:id="@+id/list_sportrecord_content"
+        android1:layout_width="fill_parent"
+        android1:layout_height="wrap_content"
+        android1:layout_below="@id/rl_sportrecord_total" >
+
+    </ListView>
+
+    <RelativeLayout
+        android1:id="@+id/rl_sportrecord_mask"
+        android1:layout_width="fill_parent"
+        android1:layout_height="fill_parent"
+        android1:background="@drawable/transparent_back" >
+    </RelativeLayout>
+
+    <RelativeLayout
+        android1:id="@+id/rl_dialog_delconfirm_dialog"
+        android1:layout_width="@dimen/dialog_delconfirm_width"
+        android1:layout_height="@dimen/dialog_delconfirm_height"
+        android1:layout_centerHorizontal="true"
+        android1:layout_centerVertical="true" >
+
+        <TextView
+            android1:id="@+id/lbl_dialog_delconfirm_title"
+            android1:layout_width="fill_parent"
+            android1:layout_height="80px"
+            android1:background="@color/common_titlebar_back"
+            android1:gravity="center_vertical|center_horizontal"
+            android1:text="@string/dialog_delete_confirm_title"
+            android1:textColor="@color/color_white"
+            android1:textSize="@dimen/title_fnt_size" />
+
+        <RelativeLayout
+            android1:layout_width="fill_parent"
+            android1:layout_height="380px"
+            android1:layout_below="@id/lbl_dialog_delconfirm_title"
+            android1:background="@color/color_white" >
+
+            <TextView
+                android1:id="@+id/lbl_dialog_delconfirm_message"
+                android1:layout_width="450px"
+                android1:layout_height="150px"
+                android1:layout_centerHorizontal="true"
+                android1:layout_marginTop="20px"
+                android1:gravity="left|center_vertical"
+                android1:text="@string/dialog_delete_confirm_msg"
+                android1:textColor="@color/common_normal_text"
+                android1:textSize="34px" />
+
+            <RelativeLayout
+                android1:layout_width="450px"
+                android1:layout_height="70px"
+                android1:layout_below="@id/lbl_dialog_delconfirm_message"
+                android1:layout_centerHorizontal="true"
+                android1:layout_marginTop="30px" >
+
+                <Button
+                    android1:id="@+id/btn_dialog_delconfirm_ok"
+                    android1:layout_width="200px"
+                    android1:layout_height="fill_parent"
+                    android1:layout_alignParentLeft="true"
+                    android1:background="@drawable/btn_green"
+                    android1:text="@string/common_ok"
+                    android1:textColor="@color/color_white"
+                    android1:textSize="@dimen/button_label_fnt_size" />
+
+                <Button
+                    android1:id="@+id/btn_dialog_delconfirm_cancel"
+                    android1:layout_width="200px"
+                    android1:layout_height="fill_parent"
+                    android1:layout_alignParentRight="true"
+                    android1:background="@drawable/btn_white"
+                    android1:text="@string/common_cancel"
+                    android1:textColor="@color/common_normal_text"
+                    android1:textSize="@dimen/button_label_fnt_size" />
+            </RelativeLayout>
+        </RelativeLayout>
+    </RelativeLayout>
+
+</RelativeLayout>

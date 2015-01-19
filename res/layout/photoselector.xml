@@ -1,0 +1,49 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/rl_photoselect"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/color_black"
+    android:gravity="center_vertical|center_horizontal" >
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content" >
+
+        <Button
+            android:id="@+id/btnTakePhoto"
+            android:layout_width="500px"
+            android:layout_height="90px"
+            android:layout_centerHorizontal="true"
+            android:background="@drawable/btn_green"
+            android:text="@string/photoselect_paizhao"
+            android:textColor="@color/color_white"
+            android:textSize="@dimen/button_label_fnt_size" />
+
+        <Button
+            android:id="@+id/btnSelImage"
+            android:layout_width="500px"
+            android:layout_height="90px"
+            android:layout_below="@id/btnTakePhoto"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="20px"
+            android:background="@drawable/btn_green"
+            android:text="@string/photoselect_congshouji"
+            android:textColor="@color/color_white"
+            android:textSize="@dimen/button_label_fnt_size" />
+
+        <Button
+            android:id="@+id/btnCancel"
+            android:layout_width="500px"
+            android:layout_height="90px"
+            android:layout_below="@id/btnSelImage"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="20px"
+            android:background="@drawable/btn_white"
+            android:text="@string/photoselect_cancel"
+            android:textColor="@color/common_normal_text"
+            android:textSize="@dimen/button_label_fnt_size" />
+
+    </RelativeLayout>
+
+</RelativeLayout>

@@ -1,0 +1,77 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/rlMain"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/common_background"
+    tools:context=".GeRenGongNengActivity" >
+
+    <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="95px" android:id="@+id/rlHeader" android:background="#00a086">
+
+        <ImageButton
+            android:id="@+id/imgbtnBack"
+            android:layout_width="55px"
+            android:layout_height="55px"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="20px"
+            android:background="@android:color/transparent"
+            android:scaleType="fitCenter"
+            android:src="@drawable/btn_back" />
+
+        <TextView
+            android:id="@+id/lblTitle"
+            android:layout_width="400px"
+            android:layout_height="match_parent"
+            android:layout_centerHorizontal="true"
+            android:background="@android:color/transparent"
+            android:gravity="center"
+            android:text="@string/activity_namesetting_title"
+            android:textColor="@android:color/white"
+            android:textSize="@dimen/title_fnt_size" />
+
+        <Button
+            android:id="@+id/btn_name_save"
+            android:layout_width="112px"
+            android:layout_height="64px"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="24px"
+            android:background="@drawable/btn_transparent"
+            android:text="@string/common_save"
+            android:textColor="@color/color_white"
+            android:textSize="@dimen/normal_fnt_size" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="151px"
+        android:layout_marginTop="95px"
+        android:background="@color/color_white" >
+
+        <EditText
+            android:id="@+id/txt_user_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="30px"
+            android:layout_marginRight="30px"
+            android:background="@drawable/common_edt_back"
+            android:ems="10"
+            android:hint="@string/activity_namesetting_name"
+            android:inputType="textNoSuggestions"
+            android:paddingLeft="20px"
+            android:text="EditText"
+            android:textColor="@color/common_note_text"
+            android:textSize="@dimen/editbox_fnt_size" >
+
+            <requestFocus />
+        </EditText>
+
+    </RelativeLayout>
+
+</RelativeLayout>

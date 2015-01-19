@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="101px"
+    android:background="@color/color_white" >
+
+    <RelativeLayout
+        android:id="@+id/item_food_main_data"
+        android:layout_width="fill_parent"
+        android:layout_height="100px" >
+
+            <RelativeLayout
+                android:layout_width="580px"
+                android:layout_height="100px"
+                android:layout_centerVertical="true" >
+
+        <TextView
+            android:id="@+id/txt_food_main_item_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="54px"
+            android:layout_marginTop="27px"
+            android:text="AAAA"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:textColor="@color/common_note_text"
+            android:textSize="36px" />
+
+    </RelativeLayout>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="1px"
+        android:layout_below="@+id/item_question_data"
+        android:background="@color/common_list_border" >
+
+    </RelativeLayout>
+
+</RelativeLayout>

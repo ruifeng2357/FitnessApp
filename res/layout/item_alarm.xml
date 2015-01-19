@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/rl_item_alarm"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:background="@android:color/transparent" >
+
+    <RelativeLayout
+        android:id="@+id/rl_item_alarm_data"
+        android:layout_width="fill_parent"
+        android:layout_height="205px"
+        android:background="@android:color/transparent" >
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="52px" >
+
+            <TextView
+                android:id="@+id/lbl_item_alarm_time"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="07:00"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:textColor="#848484"
+                android:textSize="40px"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/lbl_item_alarm_repeat"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/lbl_item_alarm_time"
+                android:layout_marginTop="10px"
+                android:text="每天"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:textColor="#848484"
+                android:textSize="26px" />
+
+            <TextView
+                android:id="@+id/lbl_item_alarm_remain"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/lbl_item_alarm_repeat"
+                android:layout_marginTop="5px"
+                android:text="14小時53分鐘后響鈴"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:textColor="#848484"
+                android:textSize="26px" />
+
+        </RelativeLayout>
+
+        <ImageView
+            android:id="@+id/img_item_alarm_switch"
+            android:layout_width="157px"
+            android:layout_height="71px"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="47px"
+            android:background="@android:color/transparent"
+            android:scaleType="fitCenter"
+            android:src="@drawable/activity_alarm_switchoff" />
+
+        <LinearLayout
+            android:id="@+id/LinearLayout1"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:background="@drawable/common_separate"
+            android:orientation="vertical" >
+
+        </LinearLayout>
+    </RelativeLayout>
+
+</RelativeLayout>

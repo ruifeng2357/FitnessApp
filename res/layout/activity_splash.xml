@@ -1,0 +1,26 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:android1="http://schemas.android.com/apk/res/android"
+    android:id="@+id/fl_splash"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    tools:context=".LoginActivity" >
+
+    <LinearLayout
+        android1:id="@+id/LinearLayout01"
+        android1:layout_width="fill_parent"
+        android1:layout_height="fill_parent"
+        android1:background="@drawable/common_background"
+        android1:orientation="vertical" >
+
+        <LinearLayout
+            android1:layout_width="fill_parent"
+            android1:layout_height="0dp"
+            android1:layout_weight="600"
+            android1:orientation="vertical" android:background="@drawable/splash">
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</FrameLayout>

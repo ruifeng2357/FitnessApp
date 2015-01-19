@@ -1,0 +1,261 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/rl_weightinfolist"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/common_background"
+    tools:context=".ShengLiZiLiaoActivity" >
+
+    <RelativeLayout
+        android:id="@+id/rl_weightinfolist_header"
+        android:layout_width="fill_parent"
+        android:layout_height="95px"
+        android:background="#00a086" >
+
+        <ImageButton
+            android:id="@+id/img_weightinfolist_back"
+            android:layout_width="55px"
+            android:layout_height="55px"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="20px"
+            android:background="@android:color/transparent"
+            android:scaleType="fitCenter"
+            android:src="@drawable/btn_back" />
+
+        <TextView
+            android:id="@+id/lblTitle"
+            android:layout_width="400px"
+            android:layout_height="match_parent"
+            android:layout_centerHorizontal="true"
+            android:background="@android:color/transparent"
+            android:gravity="center"
+            android:text="@string/activity_weightinfolist_title"
+            android:textColor="@android:color/white"
+            android:textSize="@dimen/title_fnt_size" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/rl_weightinfolist_searchdate"
+        android:layout_width="fill_parent"
+        android:layout_height="130px"
+        android:layout_below="@+id/rl_weightinfolist_header"
+        android:background="@color/color_white" >
+
+        <TextView
+            android:id="@+id/edit_weightinfolist_startdate"
+            android:layout_width="300px"
+            android:layout_height="90px"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="30px"
+            android:background="@drawable/common_edt_back"
+            android:ems="10"
+            android:enabled="true"
+            android:gravity="center_vertical"
+            android:hint="@string/activity_weightinfolist_data_startdate"
+            android:paddingLeft="20px"
+            android:text="TextView"
+            android:textColor="@color/common_note_text"
+            android:textColorHint="@color/common_placeholder_text"
+            android:textSize="@dimen/editbox_fnt_size" >
+
+            <requestFocus />
+        </TextView>
+
+        <TextView
+            android:id="@+id/txt_date_between"
+            android:layout_width="20px"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="350px"
+            android:text="~"
+            android:textSize="28px" />
+
+        <TextView
+            android:id="@+id/edit_weightinfolist_enddate"
+            android:layout_width="300px"
+            android:layout_height="90px"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="30px"
+            android:background="@drawable/common_edt_back"
+            android:ems="10"
+            android:enabled="true"
+            android:gravity="center_vertical"
+            android:hint="@string/activity_weightinfolist_data_enddate"
+            android:paddingLeft="20px"
+            android:text="TextView"
+            android:textColor="@color/common_note_text"
+            android:textColorHint="@color/common_placeholder_text"
+            android:textSize="@dimen/editbox_fnt_size" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/rl_weightinfolist_data_header"
+        android:layout_width="fill_parent"
+        android:layout_height="90px"
+        android:layout_below="@+id/rl_weightinfolist_searchdate"
+        android:background="@color/common_weightinfolist_header" >
+
+        <TextView
+            android:id="@+id/txt_weightinfolist_data_header_date"
+            android:layout_width="210px"
+            android:layout_height="90px"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:gravity="center_vertical|center_horizontal"
+            android:text="@string/activity_weightinfolist_data_header_date"
+            android:textColor="@color/color_white"
+            android:textColorHint="@color/color_white"
+            android:textSize="30px" />
+
+        <TextView
+            android:id="@+id/txt_weightinfolist_data_header_weight"
+            android:layout_width="170px"
+            android:layout_height="90px"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="210px"
+            android:gravity="center_vertical|center_horizontal"
+            android:text="@string/activity_weightinfolist_data_header_weight"
+            android:textColor="@color/color_white"
+            android:textColorHint="@color/color_white"
+            android:textSize="30px" />
+
+        <TextView
+            android:id="@+id/txt_weightinfolist_data_header_waist"
+            android:layout_width="170px"
+            android:layout_height="90px"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="380px"
+            android:gravity="center_vertical|center_horizontal"
+            android:text="@string/activity_weightinfolist_data_header_waist"
+            android:textColor="@color/color_white"
+            android:textColorHint="@color/color_white"
+            android:textSize="30px" />
+
+        <TextView
+            android:id="@+id/txt_weightinfolist_data_header_calory"
+            android:layout_width="170px"
+            android:layout_height="90px"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:gravity="center_vertical|center_horizontal"
+            android:text="@string/activity_weightinfolist_data_header_calory"
+            android:textColor="@color/color_white"
+            android:textColorHint="@color/color_white"
+            android:textSize="30px" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/rl_weightinfolist_data"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/rl_weightinfolist_data_header" >
+
+       <com.damy.Utils.PullToRefreshListView
+            android:id="@+id/anWeightinfoListContentView"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent" >
+        </com.damy.Utils.PullToRefreshListView>   
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/rl_weightinfolist_mask"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:background="@drawable/transparent_back" >
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/rl_weightinfolist_pickerdialog"
+        android:layout_width="600px"
+        android:layout_height="770px"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true" >
+
+        <TextView
+            android:id="@+id/lbl_weightinfolist_pickerdialog_title"
+            android:layout_width="fill_parent"
+            android:layout_height="80px"
+            android:background="@color/common_titlebar_back"
+            android:gravity="center_vertical|center_horizontal"
+            android:text="@string/activity_weightinfolist_data_selectdate"
+            android:textColor="@color/color_white"
+            android:textSize="@dimen/title_fnt_size" />
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_below="@id/lbl_weightinfolist_pickerdialog_title"
+            android:background="@color/color_white" >
+
+            <RelativeLayout
+                android:id="@+id/rl_weightinfolist_pickerdialog_picker"
+                android:layout_width="526px"
+                android:layout_height="506px"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="50px"
+                android:background="@drawable/common_picker_back" >
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="370px"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="16px"
+                    android:layout_marginRight="16px" >
+
+                    <com.damy.Utils.WheelPicker.WheelView
+                        android:id="@+id/wheel_weightinfolist_year"
+                        android:layout_width="0dp"
+                        android:layout_height="fill_parent"
+                        android:layout_weight="60" />
+
+                    <com.damy.Utils.WheelPicker.WheelView
+                        android:id="@+id/wheel_weightinfolist_month"
+                        android:layout_width="0dp"
+                        android:layout_height="fill_parent"
+                        android:layout_weight="40" />
+
+                    <com.damy.Utils.WheelPicker.WheelView
+                        android:id="@+id/wheel_weightinfolist_day"
+                        android:layout_width="0dp"
+                        android:layout_height="fill_parent"
+                        android:layout_weight="40" />
+                </LinearLayout>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="450px"
+                android:layout_height="70px"
+                android:layout_below="@id/rl_weightinfolist_pickerdialog_picker"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="30px" >
+
+                <Button
+                    android:id="@+id/btn_weightinfolist_pickerdialog_ok"
+                    android:layout_width="200px"
+                    android:layout_height="fill_parent"
+                    android:layout_alignParentLeft="true"
+                    android:background="@drawable/btn_green"
+                    android:text="@string/common_ok"
+                    android:textColor="@color/color_white"
+                    android:textSize="@dimen/button_label_fnt_size" />
+
+                <Button
+                    android:id="@+id/btn_weightinfolist_pickerdialog_cancel"
+                    android:layout_width="200px"
+                    android:layout_height="fill_parent"
+                    android:layout_alignParentRight="true"
+                    android:background="@drawable/btn_white"
+                    android:text="@string/common_cancel"
+                    android:textColor="@color/common_normal_text"
+                    android:textSize="@dimen/button_label_fnt_size" />
+            </RelativeLayout>
+
+        </RelativeLayout>
+    </RelativeLayout>
+
+</RelativeLayout>

@@ -1,0 +1,366 @@
+<resources xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+
+    <string name="app_name">網健康</string>
+    <string name="loading">加載中...</string>
+    <string name="action_settings">Settings</string>
+    <string name="hello_world">Hello world!</string>
+    
+    
+    <string name="net_health">網健康</string>
+    <string name="everyday_weight_log">每日體重記錄</string>
+    <string name="physiology_data">生理資料</string>
+    <string name="exercise_log">運動記錄</string>
+    <string name="meal_data">飲食資料</string>
+    <string name="hygiene_advice">衛教資訊</string>
+    <string name="online_faq">線上Q&amp;A</string>
+    <string name="user_info">個人資料</string>
+        
+    <string name="activity_login_title">登錄</string>
+    <string name="activity_login_btn_register">註冊</string>
+    <string name="activity_login_btn_login">登錄</string>
+    <string name="activity_login_btn_facebook">Facebook 登錄</string>
+    <string name="activity_login_hint_userid">手機號碼或Email</string>
+    <string name="activity_login_hint_password">請輸入密碼</string>
+
+    <string name="activity_register_title">註冊</string>
+    <string name="activity_register_btn_register">註冊</string>
+    <string name="activity_register_hint_userid">輸入手機號碼或Email</string>
+    <string name="activity_register_hint_password">密碼為6~16個英文或數字</string>
+    <string name="activity_register_hint_rpassword">再次輸入密碼</string>
+    
+    <string name="activity_sex_title">性別</string>
+    <string name="activity_sex_txt_note">根據您的個人資料，為您制訂減肥計畫</string>
+    <string name="activity_sex_btn_man">男</string>
+    <string name="activity_sex_btn_woman">女</string>
+    <string name="activity_sex_btn_next">繼續</string>
+    
+    <string name="activity_birthday_title">生日</string>
+    <string name="activity_birthday_age">歲</string>
+    <string name="activity_birthday_btn_next">繼續</string>
+    
+    <string name="activity_height_title">身高</string>
+    <string name="activity_height_milli">公分</string>
+    <string name="activity_height_btn_next">繼續</string>
+    
+    <string name="activity_weight_title">當前體重</string>
+    <string name="activity_weight_btn_next">繼續</string>
+    
+    <string name="activity_waistline_title">當前腰圍</string>
+    <string name="activity_waistline_btn_next">繼續</string>
+    
+    <string name="activity_healthinfo_title">我肥胖嗎？</string>
+    <string name="activity_healthinfo_bmisuffix">健康體重</string>
+    <string name="activity_healthinfo_noteprefix">你的健康體重範圍</string>
+    <string name="activity_healthinfo_standardnote">標準體重</string>
+    <string name="activity_healthinfo_currentnote">当前体重</string>
+    <string name="activity_healthinfo_suggestmsg1">您的體重過輕，建議您請教醫師的建議或是適當的增重，將可獲得更健康的體態喔！</string>
+    <string name="activity_healthinfo_suggestmsg2">您的體重介於正常的理想範圍當中，建議您持續保持！</string>
+    <string name="activity_healthinfo_suggestmsg3">您的體重屬於過重但未達肥胖，建議您應該開始訂定健康的減重方式，相信只要稍加努力就能達成理想體重！</string>
+    <string name="activity_healthinfo_suggestmsg4">您的體重屬於輕度肥胖，建議您應該開始認真制定健康的減重方式，初期可以設定減少體重的5％為目標，必要時徵詢專業醫師的建議。</string>
+    <string name="activity_healthinfo_suggestmsg5">您的體重屬於中度肥胖，您該開始認真訂定健康減重方式，可以設定減少體重的7％為目標，必要時徵詢專業醫師的建議。</string>
+    <string name="activity_healthinfo_suggestmsg6">您的體重屬於重度肥胖，建議您應該徵詢專業醫師的建議，您可以設定至少減少體重的10％為目標！</string>
+    <string name="activity_healthinfo_statustext1">體重過輕</string>
+    <string name="activity_healthinfo_statustext2">正常範圍</string>
+    <string name="activity_healthinfo_statustext3">體重過重</string>
+    <string name="activity_healthinfo_statustext4">輕度肥胖</string>
+    <string name="activity_healthinfo_statustext5">中度肥胖</string>
+    <string name="activity_healthinfo_statustext6">重度肥胖</string>
+    <string name="activity_healthinfo_btn_next">我要完美身材</string>
+    
+    <string name="activity_namesetting_title">設置昵稱</string>
+    <string name="activity_namesetting_name">輸入昵稱</string>
+
+    <string name="activity_weightinfo_title">體重/腰圍</string>
+    <string name="activity_weightinfo_required_weight">請輸入體重</string>
+    <string name="activity_weightinfo_required_waistline">請輸入腰圍</string>
+    
+    
+    
+    <string name="activity_targetweight_title">量身制訂減肥計畫</string>
+    <string name="activity_targetweight_note1">減肥目標</string>
+    <string name="activity_targetweight_note2">你的健康體重範圍</string>
+    <string name="activity_targetweight_btn_next">繼續</string>
+    
+    <string name="activity_targetwaistline_title">目标腰圍</string>
+    <string name="activity_targetwaistline_btn_next">繼續</string>
+    
+    <string name="activity_dailysportintensity_title">每日活動強度</string>
+    <string name="activity_dailysportintensity_explain">說明</string>
+    <string name="activity_dailysportintensity_low">低</string>
+    <string name="activity_dailysportintensity_middle">稍低</string>
+    <string name="activity_dailysportintensity_high">高</string>
+    <string name="activity_dailysportintensity_veryhigh">很高</string>
+    <string name="activity_dailysportintensity_btn_next">繼續</string>
+    
+    <string name="activity_myhealthstatus_title">我的健康評估</string>
+    <string name="activity_myhealthstatus_bodystatus">身體狀況</string>
+    <string name="activity_myhealthstatus_bmi">BMI</string>
+    <string name="activity_myhealthstatus_bminote1">偏瘦型</string>
+    <string name="activity_myhealthstatus_bminote2">健康型</string>
+    <string name="activity_myhealthstatus_bminote3">偏胖型</string>
+    <string name="activity_myhealthstatus_age">年齡</string>
+    <string name="activity_myhealthstatus_weight">體重</string>
+    <string name="activity_myhealthstatus_height">身高</string>
+    <string name="activity_myhealthstatus_sample">健康目標</string>
+    <string name="activity_myhealthstatus_targetweight">目标</string>
+    <string name="activity_myhealthstatus_currentweight">当前体重</string>
+    <string name="activity_myhealthstatus_targetwaistline">目標腰圍</string>
+    <string name="activity_myhealthstatus_currentwaistline">當前腰圍</string>
+    <string name="activity_myhealthstatus_badge">偏胖型</string>
+    <string name="activity_myhealthstatus_btn_next">馬上去減肥</string>
+    
+    <string name="activity_myinfo_title">個人資料</string>
+    <string name="activity_myinfo_username">設置昵稱</string>
+    <string name="activity_myinfo_changepassword">修改密碼</string>
+    <string name="activity_myinfo_bmi">目前BMI</string>
+    <string name="activity_myinfo_bmr">目前BMR</string>
+    <string name="activity_myinfo_level">每日活動強度</string>
+    <string name="activity_myinfo_sex">性別</string>
+    <string name="activity_myinfo_birthday">生日</string>
+    <string name="activity_myinfo_height">身高</string>
+    <string name="activity_myinfo_curweight">現在體重</string>
+    <string name="activity_myinfo_targetweight">目標體重</string>
+    <string name="activity_myinfo_curwaistline">腰圍 </string>
+    <string name="activity_myinfo_targetwaistline">目標腰圍</string>
+    
+    <string name="activity_changepassword_title">修改密碼</string>
+    <string name="activity_changepassword_old">原密碼</string>
+    <string name="activity_changepassword_new">新密碼為6~16個英文或數字</string>
+    <string name="activity_changepassword_retype">再次輸入密碼</string>
+    
+    <string name="activity_weightinfolist_title">我的記錄</string>
+    <string name="activity_weightinfolist_data_header_date">日期</string>
+    <string name="activity_weightinfolist_data_header_weight">體重(kg)</string>
+    <string name="activity_weightinfolist_data_header_waist">腰圍(cm)</string>
+    <string name="activity_weightinfolist_data_header_calory">熱量(大卡)</string>
+    <string name="activity_weightinfolist_data_startdate">開始時間</string>
+    <string name="activity_weightinfolist_data_enddate">結束時間</string>
+    <string name="activity_weightinfolist_data_selectdate">选择日期</string>
+    
+    <string name="activity_healthvideolist_title1">最新資訊</string>
+    <string name="activity_healthvideolist_title2">衛教影片</string>
+    
+    <string name="activity_foodmainlist_title">飲食分類</string>
+    
+    <string name="activity_foodrecord_title">飲食記錄</string>
+    <string name="activity_foodrecord_takecalrory">淨值</string>
+    <string name="activity_foodrecord_targetcalory">預算</string>
+    <string name="activity_foodrecord_note">可以點擊滑動條或上方預算熱量輸入目標熱量。</string>
+    <string name="activity_foodrecord_takesuffix">kcal（今日攝取）</string>
+    <string name="activity_foodrecord_waistsuffix">kcal（運動燃燒）</string>
+    <string name="activity_foodrecord_totalsuffix">kcal（還可攝取）</string>
+    <string name="activity_foodrecord_breakfast">早餐</string>
+    <string name="activity_foodrecord_lunch">午餐</string>
+    <string name="activity_foodrecord_other">零食</string>
+    <string name="activity_foodrecord_dinner">晚餐</string>
+    <string name="activity_foodrecord_setdialogtitle">預算熱量</string>
+    <string name="activity_foodrecord_setdialoghint">請輸入熱量</string>
+    <string name="activity_foodrecord_errorsetvalue">請輸入熱量</string>
+    
+    
+    <string name="activity_foodrecordinfo_title">飲食分類</string>
+    <string name="activity_foodrecordinfo_save">保存</string>
+    <string name="activity_foodrecordinfo_errorselectamount">選擇攝取量</string>
+    <string name="activity_foodrecordinfo_photo">拍照</string>
+    <string name="activity_foodrecordinfo_calorysuffix"></string>
+    
+    <string name="activity_sportrecord_title">運動記錄</string>
+    <string name="activity_sportrecord_sport">運動</string>
+    
+    <string name="activity_sporttype_title">運動項目</string>
+    
+    <string name="activity_sportrecordinfo_title">運動記錄</string>
+    <string name="activity_sportrecordinfo_starttime">開始時間</string>
+    <string name="activity_sportrecordinfo_endtime">結束時間</string>
+    <string name="activity_sportrecordinfo_selstarttime">運動開始時間</string>
+    <string name="activity_sportrecordinfo_selendtime">運動結束時間</string>
+    <string name="activity_sportrecordinfo_save">保存記錄</string>
+    
+    <string name="activity_facebook_title">Facebook分享</string>
+    <string name="activity_facebook_name_hint">請輸入標題</string>
+    <string name="activity_facebook_save">分享</string>
+    <string name="activity_facebook_del">刪除</string> 
+    
+    
+    <string name="activity_questiondetail_title">Q&amp;A</string>
+    <string name="activity_questiondetail_notehint">我想說</string>
+    <string name="activity_questiondetail_erroremptynote">請輸入你想說的話</string>
+    <string name="activity_questiondetail_submit">發送</string>
+    <string name="activity_questiondetail_question">問</string>
+    <string name="activity_questiondetail_answer">答</string>
+    
+    
+    <string name="activity_alarm_title">個人提醒設定</string>
+    <string name="activity_alarm_hoursuffix">小時</string>
+    <string name="activity_alarm_minutesuffix">分鐘后響鈴</string>
+    <string name="activity_alarm_after">已經過時</string>
+    <string name="activity_alarm_less1min">不到1分鐘后響鈴</string>
+    <string name="activity_alarm_notday">今天没提醒</string>
+    
+    
+    <string name="activity_alarminfo_title">設置鬧鐘</string>
+    <string name="activity_alarminfo_repeat">重複</string>
+    <string name="activity_alarminfo_sound">鈴聲</string>
+    <string name="activity_alarminfo_vibration">振動</string>
+    <string name="activity_alarminfo_alramname">備註</string>
+    <string name="activity_alarminfo_nosound">默認鈴聲</string>
+    <string name="activity_alarminfo_userdefine">自定義</string>
+    <string name="activity_alarminfo_namehint">輸入開鐘備註</string>
+    <string name="activity_alarminfo_soundprefix">Sound</string>
+    
+    <string name="activity_alarmalert_btnretry">十分鐘後再提醒</string>
+    <string name="activity_alarmalert_cancel">停止提醒</string>
+    
+    <string name="alarm_onetime">只聲一次</string>
+    <string name="alarm_daily">每天</string>
+    <string name="alarm_5days">週一至週五</string>
+	<string name="alarm_mon">週一</string>
+    <string name="alarm_tue">週二</string>
+    <string name="alarm_wed">週三</string>
+    <string name="alarm_thr">週四</string>
+    <string name="alarm_fri">週五</string>
+    <string name="alarm_sat">週六</string>
+    <string name="alarm_sun">週日</string>
+    
+    
+    
+    <string name="menu_persondata">個人資料</string>
+    <string name="menu_recorddata">我的記錄</string>
+    <string name="menu_setting">設置(提醒)</string>
+    <string name="menu_logout">退出</string>
+    
+    
+    
+    
+    <string name="blood_pressure">血壓值：</string>
+    <string name="diastolic_pressure">舒張壓</string>
+    <string name="systolic_pressure">收縮壓</string>
+    <string name="unit_mmhg">mmHg</string>
+    <string name="blood_glucose">血糖值</string>
+    <string name="unit_mgpdl">mg/dl</string>
+    <string name="is_stomach_empty">測量時空腹？</string>
+    <string name="yes">是</string>
+    <string name="no">否</string>
+    <string name="high_density_fat_protein">高密度脂蛋白</string>
+    <string name="cholesterol_value">膽固醇值</string>
+    <string name="low_density_fat_protein">低密度脂蛋白</string>
+    <string name="glycerin">三酸甘油</string>
+    <string name="fat_value">脂值</string>
+    <string name="submit_info">資料送出</string>
+    
+    <string name="activity_physilogy_required_highblood">請輸入收縮壓</string>
+    <string name="activity_physilogy_required_lowblood">請輸入舒張壓</string>
+    <string name="activity_physilogy_required_sugar">請輸入血糖值</string>
+    <string name="activity_physilogy_required_highcholesterol">請輸入高密度脂蛋白</string>
+    <string name="activity_physilogy_required_lowcholesterol">請輸入低密度脂蛋白</string>
+    <string name="activity_physilogy_required_glyceride">請輸入三酸甘油</string>
+
+    
+    <string name="dialog_delete_confirm_title">刪除確認</string>
+    <string name="dialog_delete_confirm_msg">您確認要刪除嗎？</string>
+    
+    <string name="photoselect_paizhao">手機拍照</string>
+    <string name="photoselect_congshouji">從相簿選擇</string>
+    <string name="photoselect_cancel">取消</string>
+    
+    <!-- common -->
+    <string name="common_waiting">請稍等。。。</string>
+    <string name="common_fail">失败</string>
+    <string name="common_save">保存</string>
+
+    <string name="common_unit_gongjin">公斤</string>
+    <string name="common_unit_kilogram">kg</string>
+    <string name="common_unit_centimeter">公分</string>
+    <string name="common_greeting">您好</string>
+    <string name="common_year">年</string>
+    <string name="common_month">月</string>
+    <string name="common_day">日</string>
+    <string name="common_old">歲</string>
+    <string name="common_today">今日</string>
+    <string name="common_date">日期</string>
+    <string name="common_hour">时</string>
+    <string name="common_hours">點</string>
+    <string name="common_minute">分</string>
+    
+    <string name="common_mon">星期一</string>
+    <string name="common_tue">星期二</string>
+    <string name="common_wed">星期三</string>
+    <string name="common_thr">星期四</string>
+    <string name="common_fri">星期五</string>
+    <string name="common_sat">星期六</string>
+    <string name="common_sun">星期日</string>
+    
+    
+
+    <string name="common_cancel">取消</string>
+    <string name="common_ok">確認</string>
+    
+    <string name="common_comma">、</string>
+    
+    <string name="common_weight">體重</string>
+    <string name="common_waist">腰圍</string>    
+    
+    <string name="common_jintianshi">今天是</string>
+    <string name="common_blood_normal">您的血壓屬於正常值</string>
+    <string name="common_blood_error1">有高血壓傾向啦，要注意喔!</string>
+    <string name="common_blood_error2">有高血壓症狀，請留意!</string>
+    <string name="common_blood_sugar_normal">您的血糖屬於正常值</string>
+    <string name="common_blood_sugar_error1">屬於糖尿病前期，要注意喔!</string>
+    <string name="common_blood_sugar_error2">有高血糖症狀，請留意!</string>
+    <string name="common_high_cholesterol_normal">您的高密度脂蛋白膽固醇屬於正常值</string>
+    <string name="common_low_cholesterol_normal">您的低密度脂蛋白膽固醇屬於正常值</string>
+    <string name="common_low_cholesterol_error1">您的低密度脂蛋白膽固醇快要超過標準啦，要注意喔!</string>
+    <string name="common_low_cholesterol_error2">您的低密度脂蛋白膽固醇超過標準值，請留意!</string>
+    <string name="common_sum_cholesterol_normal">您的總膽固醇屬於正常值</string>
+    <string name="common_sum_cholesterol_error1">您的總膽固醇快要超過標準啦，要注意喔!</string>
+    <string name="common_sum_cholesterol_error2">您的總膽固醇超過標準值，請留意!</string>
+    <string name="common_glyceride_normal">您的三酸甘油酯屬於正常值</string>
+    <string name="common_glyceride_error1">您的三酸甘油酯快要超過標準啦，要注意喔!</string>
+    <string name="common_glyceride_error2">您的三酸甘油酯超過標準值，請留意!</string>
+    
+    <string name="common_waistline_normalmsg">您設定的腰圍屬於正常值。</string>
+    <string name="common_waistline_unnormalmsg">您設定的腰圍太粗囉，請留意!</string>
+    
+    <string name="common_gram">克</string>
+    <string name="common_amount">個</string>
+    <string name="common_calory">千卡</string>
+    
+    <!-- error -->
+    <string name="error_required_userid">請輸入手機號碼或Email</string>
+    <string name="error_userid_length">請輸入準確的手機號碼/Email。</string>
+    <string name="error_required_password">請輸入密碼</string>
+    <string name="error_notmatch_password">確認密碼不同</string>
+    <string name="error_password_charactercount">密碼要是6~16个数字</string>    
+    <string name="error_duplicate_userid">賬號已存在</string>
+    <string name="error_oldpassword">原密碼不正確</string>
+    <string name="error_no_user">賬號不存在</string>
+    <string name="error_no_image">图片保存失败</string>
+    <string name="error_no_info">资料不存在</string>
+    <string name="error_timemismatch">運動時間不準確，請仔細確認開始時間與結束時間</string>
+    <string name="error_notsetstarttime">請選擇開始時間</string>
+    <string name="error_notsetendtime">請選擇結束時間</string>
+    
+    
+    <!--  for alarm  -->
+    <string name="every_day">"每天"</string>
+    <string name="never">"一律不"</string>
+    <string name="day_concat">", "</string>
+    <string name="default_label">"Alarm"</string>
+    <string name="silent_alarm_summary">"静音"</string>
+    <string name="set_alarm">"設置鬧鐘"</string>
+    <string name="settings">"設置"</string>
+    <string name="alarm_alert_snooze_text">"暫停再响"</string>
+    <string name="alarm_alert_dismiss_text">"取消"</string>
+    <string name="alarm_notify_snooze_label">"<xliff:g id="LABEL">%s</xliff:g>（已暫停）"</string>
+    <string name="alarm_notify_snooze_text">"已將鬧鐘設置為從現在起 <xliff:g id="TIME">%s</xliff:g>後再提醒。選中可以取消。"</string>
+    <string name="alarm_alert_snooze_set">"暫停 <xliff:g id="MINUTES">%d</xliff:g> 分鐘。"</string>
+    <string name="alarm_notify_text">"選擇暫停或關閉此鬧鐘。"</string>
+    <string name="alarm_alert_alert_silenced">"鬧鐘響鈴時間為 <xliff:g id="MINUTES">%d</xliff:g> 分鐘"</string>
+    <string name="alarm_klaxon_service_desc">"在 DeskClock 中設置的鬧鐘鈴聲播放服務。"</string>
+    <string name="youtube_error_player">"There was an error initializing the YouTubePlayer (%1$s)"</string>
+
+    
+    
+    
+</resources>

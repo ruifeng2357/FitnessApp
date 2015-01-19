@@ -1,0 +1,136 @@
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                    xmlns:tools="http://schemas.android.com/tools"
+                    android:id="@+id/rl_alarm"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/common_background"
+                    tools:context=".ShengLiZiLiaoActivity" >
+
+        <RelativeLayout
+                android:id="@+id/rl_alarm_header"
+                android:layout_width="fill_parent"
+                android:layout_height="95px"
+                android:background="@color/common_titlebar_back" >
+
+            <ImageButton
+                    android:id="@+id/imgbtn_alarm_back"
+                    android:layout_width="55px"
+                    android:layout_height="55px"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="20px"
+                    android:background="@android:color/transparent"
+                    android:scaleType="fitCenter"
+                    android:src="@drawable/btn_back" />
+
+            <TextView
+                    android:id="@+id/lbl_alarm_title"
+                    android:layout_width="400px"
+                    android:layout_height="match_parent"
+                    android:layout_centerHorizontal="true"
+                    android:layout_centerVertical="true"
+                    android:background="@android:color/transparent"
+                    android:gravity="center"
+                    android:text="@string/activity_alarm_title"
+                    android:textColor="@android:color/white"
+                    android:textSize="@dimen/title_fnt_size" />
+        </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/rl_alarm_list"
+        android:layout_width="fill_parent"
+        android:layout_height="1020px"
+        android:layout_below="@id/rl_alarm_header" >
+
+        <ListView
+            android:id="@+id/list_alarm_content"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content" >
+        </ListView>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_below="@id/rl_alarm_list" >
+
+        <Button
+            android:id="@+id/btn_alarm_add"
+            android:layout_width="527px"
+            android:layout_height="89px"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:background="@drawable/activity_alarm_btnadd" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/rl_alarm_mask"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:background="@drawable/transparent_back" >
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/rl_dialog_delconfirm_dialog"
+        android:layout_width="@dimen/dialog_delconfirm_width"
+        android:layout_height="@dimen/dialog_delconfirm_height"
+        android:layout_centerHorizontal="true"
+        android:layout_centerInParent="true" >
+
+        <TextView
+            android:id="@+id/lbl_dialog_delconfirm_title"
+            android:layout_width="fill_parent"
+            android:layout_height="80px"
+            android:background="@color/common_titlebar_back"
+            android:gravity="center_vertical|center_horizontal"
+            android:text="@string/dialog_delete_confirm_title"
+            android:textColor="@color/color_white"
+            android:textSize="@dimen/title_fnt_size" />
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="380px"
+            android:layout_below="@id/lbl_dialog_delconfirm_title"
+            android:background="@color/color_white" >
+
+            <TextView
+                android:id="@+id/lbl_dialog_delconfirm_message"
+                android:layout_width="450px"
+                android:layout_height="150px"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="20px"
+                android:gravity="left|center_vertical"
+                android:text="@string/dialog_delete_confirm_msg"
+                android:textColor="@color/common_normal_text"
+                android:textSize="34px" />
+
+            <RelativeLayout
+                android:layout_width="450px"
+                android:layout_height="70px"
+                android:layout_below="@id/lbl_dialog_delconfirm_message"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="30px" >
+
+                <Button
+                    android:id="@+id/btn_dialog_delconfirm_ok"
+                    android:layout_width="200px"
+                    android:layout_height="fill_parent"
+                    android:layout_alignParentLeft="true"
+                    android:background="@drawable/btn_green"
+                    android:text="@string/common_ok"
+                    android:textColor="@color/color_white"
+                    android:textSize="@dimen/button_label_fnt_size" />
+
+                <Button
+                    android:id="@+id/btn_dialog_delconfirm_cancel"
+                    android:layout_width="200px"
+                    android:layout_height="fill_parent"
+                    android:layout_alignParentRight="true"
+                    android:background="@drawable/btn_white"
+                    android:text="@string/common_cancel"
+                    android:textColor="@color/common_normal_text"
+                    android:textSize="@dimen/button_label_fnt_size" />
+            </RelativeLayout>
+        </RelativeLayout>
+    </RelativeLayout>
+
+</RelativeLayout>

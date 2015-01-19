@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:id="@android:id/background">
+        <nine-patch
+            xmlns:android="http://schemas.android.com/apk/res/android"
+            android:src="@drawable/activity_foodrecord_seekbar_back"
+            android:dither="true"
+         />
+    </item>
+    <item android:id="@android:id/secondaryProgress">
+        <clip>
+            <shape>
+                <gradient
+                    android:startColor="#00000000"
+                    android:centerColor="#00000000"
+                    android:centerY="0.75"
+                    android:endColor="#00000000"
+                    android:angle="270"
+                />
+            </shape>
+        </clip>
+    </item>
+    <item
+        android:id="@android:id/progress"
+        android:drawable="@drawable/activity_foodrecord_seekbar_progress_bg"
+    />
+</layer-list>

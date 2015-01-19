@@ -1,0 +1,87 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/rl_questiondetail"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/common_background"
+    tools:context=".ShengLiZiLiaoActivity" >
+
+    <RelativeLayout
+        android:id="@+id/rl_questiondetail_header"
+        android:layout_width="fill_parent"
+        android:layout_height="95px"
+        android:background="@color/common_titlebar_back6" >
+
+        <ImageButton
+            android:id="@+id/imgbtn_questiondetail_back"
+            android:layout_width="55px"
+            android:layout_height="55px"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="20px"
+            android:background="@android:color/transparent"
+            android:scaleType="fitCenter"
+            android:src="@drawable/btn_back" />
+
+        <TextView
+            android:id="@+id/lbl_questiondetail_title"
+            android:layout_width="400px"
+            android:layout_height="match_parent"
+            android:layout_centerHorizontal="true"
+            android:background="@android:color/transparent"
+            android:gravity="center"
+            android:text="@string/activity_questiondetail_title"
+            android:textColor="@android:color/white"
+            android:textSize="@dimen/title_fnt_size" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/rl_questiondetail_footer"
+        android:layout_width="fill_parent"
+        android:layout_height="98px"
+        android:layout_alignParentBottom="true"
+        android:background="@color/common_titlebar_back6" >
+
+        <EditText
+            android:id="@+id/edit_questiondetail_note"
+            android:layout_width="582px"
+            android:layout_height="66px"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10px"
+            android:background="@color/color_white"
+            android:ems="10"
+            android:hint="@string/activity_questiondetail_notehint"
+            android:inputType="textNoSuggestions"
+            android:lines="1"
+            android:minLines="1"
+            android:paddingLeft="20px"
+            android:textColor="@color/common_note_text"
+            android:textSize="@dimen/editbox_fnt_size" />
+
+        <Button
+            android:id="@+id/btn_questiondetail_submit"
+            android:layout_width="102px"
+            android:layout_height="66px"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="10px"
+            android:background="@color/color_white"
+            android:text="@string/activity_questiondetail_submit"
+            android:textColor="@color/common_note_text"
+            android:textSize="@dimen/button_label_fnt_size" />
+    </RelativeLayout>
+
+    <ListView
+        android:id="@+id/list_questiondetail_content"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_above="@id/rl_questiondetail_footer"
+        android:layout_below="@id/rl_questiondetail_header"
+        android:clickable="false"
+        android:drawSelectorOnTop="false"
+        android:longClickable="false" >
+
+    </ListView>
+
+</RelativeLayout>

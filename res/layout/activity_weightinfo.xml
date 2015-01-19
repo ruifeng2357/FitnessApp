@@ -1,0 +1,290 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/rlMain"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/common_background"
+    tools:context=".ShengLiZiLiaoActivity" >
+
+    <RelativeLayout
+        android:id="@+id/rlHeader"
+        android:layout_width="fill_parent"
+        android:layout_height="95px"
+        android:background="@color/common_titlebar_back1" >
+
+        <ImageButton
+            android:id="@+id/imgbtnBack"
+            android:layout_width="55px"
+            android:layout_height="55px"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="20px"
+            android:background="@android:color/transparent"
+            android:scaleType="fitCenter"
+            android:src="@drawable/btn_back" />
+
+        <TextView
+            android:id="@+id/lblTitle"
+            android:layout_width="400px"
+            android:layout_height="match_parent"
+            android:layout_centerHorizontal="true"
+            android:background="@android:color/transparent"
+            android:gravity="center"
+            android:text="@string/activity_weightinfo_title"
+            android:textColor="@android:color/white"
+            android:textSize="@dimen/title_fnt_size" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/rlLogDate"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/label_height"
+        android:layout_alignParentLeft="false"
+        android:layout_alignParentTop="false"
+        android:layout_below="@+id/rlHeader"
+        android:background="@color/color_white" >
+
+        <TextView
+            android:id="@+id/lblGreeting"
+            android:layout_width="590px"
+            android:layout_height="match_parent"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="65px"
+            android:layout_marginRight="65px"
+            android:gravity="center"
+            android:text=""
+            android:textColor="#878787"
+            android:textSize="36px" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/rlScrMain"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_below="@+id/rlLogDate"
+        android:layout_marginBottom="200px"
+        android:layout_marginTop="30px"
+        android:paddingRight="30px" >
+
+        <RelativeLayout
+            android:id="@+id/rlWeight"
+            android:layout_width="fill_parent"
+            android:layout_height="@dimen/label_height"
+            android:layout_marginLeft="20px"
+            android:layout_marginRight="20px" >
+
+            <TextView
+                android:id="@+id/lblWeight"
+                android:layout_width="110px"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:text="@string/common_weight"
+                android:textColor="#878787"
+                android:textSize="34px" />
+
+            <TextView
+                android:id="@+id/txt_weightinfo_weight"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_centerVertical="true"
+                android:layout_toLeftOf="@+id/lblWeight_Unit"
+                android:layout_toRightOf="@+id/lblWeight"
+                android:background="@drawable/edt_back_02"
+                android:gravity="left|center_vertical"
+                android:padding="15px"
+                android:singleLine="true"
+                android:textColor="@color/common_note_text"
+                android:textSize="@dimen/editbox_fnt_size" />
+
+            <TextView
+                android:id="@+id/lblWeight_Unit"
+                android:layout_width="80px"
+                android:layout_height="match_parent"
+                android:layout_alignParentRight="true"
+                android:gravity="center"
+                android:text="@string/common_unit_gongjin"
+                android:textColor="#878787"
+                android:textSize="34px" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/rlWaist"
+            android:layout_width="fill_parent"
+            android:layout_height="@dimen/label_height"
+            android:layout_marginLeft="20px"
+            android:layout_marginRight="20px"
+            android:layout_marginTop="100px" >
+
+            <TextView
+                android:id="@+id/lblWaist"
+                android:layout_width="110px"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:text="@string/common_waist"
+                android:textColor="#878787"
+                android:textSize="34px" />
+
+            <TextView
+                android:id="@+id/txt_weightinfo_waist"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_centerVertical="true"
+                android:layout_toLeftOf="@+id/lblWaist_Unit"
+                android:layout_toRightOf="@+id/lblWaist"
+                android:background="@drawable/edt_back_02"
+                android:gravity="left|center_vertical"
+                android:padding="15px"
+                android:singleLine="true"
+                android:textColor="@color/common_note_text"
+                android:textSize="@dimen/editbox_fnt_size" />
+
+            <TextView
+                android:id="@+id/lblWaist_Unit"
+                android:layout_width="80px"
+                android:layout_height="match_parent"
+                android:layout_alignParentRight="true"
+                android:gravity="center"
+                android:text="@string/common_unit_centimeter"
+                android:textColor="#878787"
+                android:textSize="34px" />
+        </RelativeLayout>
+    </RelativeLayout>
+
+    <Button
+        android:id="@+id/btn_save_weightinfo"
+        android:layout_width="527px"
+        android:layout_height="89px"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="60px"
+        android:layout_marginLeft="95px"
+        android:background="@drawable/btn_green_01"
+        android:text="@string/submit_info"
+        android:textColor="@android:color/white"
+        android:textSize="@dimen/button_label_fnt_size"
+        android:textStyle="bold" />
+
+    <RelativeLayout
+        android:id="@+id/rl_weightinfo_mask"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:background="@drawable/transparent_back" >
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/rl_weightinfo_pickerdialog"
+        android:layout_width="600px"
+        android:layout_height="770px"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true" >
+
+        <TextView
+            android:id="@+id/lbl_weightinfo_pickerdialog_title"
+            android:layout_width="fill_parent"
+            android:layout_height="80px"
+            android:background="@color/common_titlebar_back"
+            android:gravity="center_vertical|center_horizontal"
+            android:text="@string/common_weight"
+            android:textColor="@color/color_white"
+            android:textSize="@dimen/title_fnt_size" />
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_below="@id/lbl_weightinfo_pickerdialog_title"
+            android:background="@color/color_white" >
+
+            <RelativeLayout
+                android:id="@+id/rl_weightinfo_pickerdialog_weight"
+                android:layout_width="526px"
+                android:layout_height="506px"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="50px"
+                android:background="@drawable/common_picker_back" >
+
+                <RelativeLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="370px"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="16px"
+                    android:layout_marginRight="16px" >
+
+                    <com.damy.Utils.WheelPicker.WheelView
+                        android:id="@+id/wheel_weightinfo_weight_int"
+                        android:layout_width="250px"
+                        android:layout_height="fill_parent"
+                        android:layout_weight="60" />
+
+                    <com.damy.Utils.WheelPicker.WheelView
+                        android:id="@+id/wheel_weightinfo_weight_float"
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent"
+                        android:layout_toRightOf="@id/wheel_weightinfo_weight_int"
+                        android:layout_weight="60" />
+
+                </RelativeLayout>
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/rl_weightinfo_pickerdialog_waistline"
+                android:layout_width="526px"
+                android:layout_height="506px"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="50px"
+                android:background="@drawable/common_picker_back" >
+
+                <RelativeLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="370px"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="16px"
+                    android:layout_marginRight="16px" >
+
+                    <com.damy.Utils.WheelPicker.WheelView
+                        android:id="@+id/wheel_weightinfo_waistline_int"
+                        android:layout_width="250px"
+                        android:layout_height="fill_parent"
+                        android:layout_weight="60" />
+
+                    <com.damy.Utils.WheelPicker.WheelView
+                        android:id="@+id/wheel_weightinfo_waistline_float"
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent"
+                        android:layout_toRightOf="@id/wheel_weightinfo_waistline_int"
+                        android:layout_weight="60" />
+                </RelativeLayout>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="450px"
+                android:layout_height="70px"
+                android:layout_below="@id/rl_weightinfo_pickerdialog_weight"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="30px" >
+
+                <Button
+                    android:id="@+id/btn_weightinfo_pickerdialog_ok"
+                    android:layout_width="200px"
+                    android:layout_height="fill_parent"
+                    android:layout_alignParentLeft="true"
+                    android:background="@drawable/btn_green"
+                    android:text="@string/common_ok"
+                    android:textColor="@color/color_white"
+                    android:textSize="@dimen/button_label_fnt_size" />
+
+                <Button
+                    android:id="@+id/btn_weightinfo_pickerdialog_cancel"
+                    android:layout_width="200px"
+                    android:layout_height="fill_parent"
+                    android:layout_alignParentRight="true"
+                    android:background="@drawable/btn_white"
+                    android:text="@string/common_cancel"
+                    android:textColor="@color/common_normal_text"
+                    android:textSize="@dimen/button_label_fnt_size" />
+            </RelativeLayout>
+
+        </RelativeLayout>
+    </RelativeLayout>
+
+</RelativeLayout>

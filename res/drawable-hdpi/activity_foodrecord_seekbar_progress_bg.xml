@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+ <layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <item>
+        <clip>
+            <shape>
+                <gradient
+                    android:startColor="#00000000"
+                    android:centerColor="#00000000"
+                    android:centerY="0.1"
+                    android:endColor="#00000000"
+                    android:angle="270"
+                />
+            </shape>
+        </clip>
+    </item>
+    <item>
+        <clip>
+        <bitmap xmlns:android="http://schemas.android.com/apk/res/android"
+            android:src="@drawable/activity_foodrecord_seekbar_inner"
+            android:tileMode="disabled"
+            android:antialias="true"
+            android:dither="false"
+            android:filter="false"
+            android:gravity="fill"
+        />
+        </clip>
+    </item>
+</layer-list>

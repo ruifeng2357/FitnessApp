@@ -1,0 +1,240 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:android1="http://schemas.android.com/apk/res/android"
+    android:id="@+id/rl_dailysportintensity"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android1:background="@drawable/common_background"
+    tools:context=".LoginActivity" >
+
+    <RelativeLayout
+        android1:id="@+id/rl_dailysportintensity_header"
+        android1:layout_width="fill_parent"
+        android1:layout_height="95px"
+        android1:layout_alignParentLeft="true"
+        android1:layout_alignParentTop="true"
+        android1:background="#00a086" >
+
+        <ImageButton
+            android1:id="@+id/imgbtn_dailysportintensity_back"
+            android1:layout_width="55px"
+            android1:layout_height="55px"
+            android1:layout_centerVertical="true"
+            android1:layout_marginLeft="20px"
+            android1:background="@android:color/transparent"
+            android1:scaleType="fitCenter"
+            android1:src="@drawable/btn_back" />
+
+        <TextView
+            android1:id="@+id/lbl_dailysportintensity_title"
+            android1:layout_width="400px"
+            android1:layout_height="match_parent"
+            android1:layout_centerHorizontal="true"
+            android1:background="@android:color/transparent"
+            android1:gravity="center"
+            android1:text="@string/activity_dailysportintensity_title"
+            android1:textColor="@android:color/white"
+            android1:textSize="@dimen/title_fnt_size" />
+
+        <Button
+            android1:id="@+id/btn_dailysportintensity_save"
+            android1:layout_width="112px"
+            android1:layout_height="64px"
+            android1:layout_alignParentRight="true"
+            android1:layout_centerVertical="true"
+            android1:layout_marginRight="24px"
+            android1:background="@drawable/btn_transparent"
+            android1:text="@string/common_save"
+            android1:textColor="@color/color_white"
+            android1:textSize="@dimen/normal_fnt_size" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android1:id="@+id/rl_dailysportintensity_explain"
+        android1:layout_width="683px"
+        android1:layout_height="wrap_content"
+        android1:layout_below="@id/rl_dailysportintensity_header"
+        android1:layout_centerHorizontal="true"
+        android1:layout_marginTop="24px"
+        android1:background="@color/color_white" >
+
+        <TextView
+            android1:id="@+id/lbl_dailysportintensity_explain"
+            android1:layout_width="588px"
+            android1:layout_height="wrap_content"
+            android1:layout_alignParentTop="true"
+            android1:layout_centerHorizontal="true"
+            android1:layout_marginTop="28px"
+            android1:text="@string/activity_dailysportintensity_explain"
+            android1:textColor="@color/common_note_text"
+            android1:textSize="30px" />
+
+        <TextView
+            android1:id="@+id/lbl_dailysportintensity_note"
+            android1:layout_width="588px"
+            android1:layout_height="wrap_content"
+            android1:layout_below="@id/lbl_dailysportintensity_explain"
+            android1:layout_centerHorizontal="true"
+            android1:layout_marginTop="24px"
+            android1:paddingBottom="24px"
+            android1:text="asdfasfsdf\nasdflaskdfjlaskdjf\nasdfasdfasdf"
+            android1:textColor="@color/common_note_text"
+            android1:textSize="30px" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android1:id="@+id/rl_dailysportintensity_picture"
+        android1:layout_width="622px"
+        android1:layout_height="wrap_content"
+        android1:layout_below="@id/rl_dailysportintensity_explain"
+        android1:layout_centerHorizontal="true"
+        android1:layout_marginTop="60px" >
+
+        <RelativeLayout
+            android1:id="@+id/rl_dailysportintensity_low"
+            android1:layout_width="62px"
+            android1:layout_height="wrap_content" >
+
+            <ImageView
+                android1:id="@+id/img_dailysportintensity_low"
+                android1:layout_width="62px"
+                android1:layout_height="58px"
+                android1:src="@drawable/activity_dailysportintensity_snail" />
+
+            <TextView
+                android1:id="@+id/lbl_dailysportintensity_low"
+                android1:layout_width="wrap_content"
+                android1:layout_height="wrap_content"
+                android1:layout_below="@id/img_dailysportintensity_low"
+                android1:layout_centerHorizontal="true"
+                android1:layout_marginTop="8px"
+                android1:text="@string/activity_dailysportintensity_low"
+                android1:textColor="@color/common_note_text"
+                android1:textSize="30px" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android1:id="@+id/rl_dailysportintensity_medium"
+            android1:layout_width="62px"
+            android1:layout_height="wrap_content"
+            android1:layout_marginLeft="122px"
+            android1:layout_toRightOf="@id/rl_dailysportintensity_low" >
+
+            <ImageView
+                android1:id="@+id/img_dailysportintensity_medium"
+                android1:layout_width="62px"
+                android1:layout_height="58px"
+                android1:src="@drawable/activity_dailysportintensity_turtle" />
+
+            <TextView
+                android1:id="@+id/lbl_dailysportintensity_medium"
+                android1:layout_width="wrap_content"
+                android1:layout_height="wrap_content"
+                android1:layout_below="@id/img_dailysportintensity_medium"
+                android1:layout_centerHorizontal="true"
+                android1:layout_marginTop="8px"
+                android1:text="@string/activity_dailysportintensity_middle"
+                android1:textColor="@color/common_note_text"
+                android1:textSize="30px" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android1:id="@+id/rl_dailysportintensity_high"
+            android1:layout_width="62px"
+            android1:layout_height="wrap_content"
+            android1:layout_marginLeft="128px"
+            android1:layout_toRightOf="@id/rl_dailysportintensity_medium" >
+
+            <ImageView
+                android1:id="@+id/img_dailysportintensity_high"
+                android1:layout_width="62px"
+                android1:layout_height="58px"
+                android1:src="@drawable/activity_dailysportintensity_rabbit" />
+
+            <TextView
+                android1:id="@+id/lbl_dailysportintensity_high"
+                android1:layout_width="wrap_content"
+                android1:layout_height="wrap_content"
+                android1:layout_below="@id/img_dailysportintensity_high"
+                android1:layout_centerHorizontal="true"
+                android1:layout_marginTop="8px"
+                android1:text="@string/activity_dailysportintensity_high"
+                android1:textColor="@color/common_note_text"
+                android1:textSize="30px" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android1:id="@+id/rl_dailysportintensity_veryhigh"
+            android1:layout_width="62px"
+            android1:layout_height="wrap_content"
+            android1:layout_alignParentRight="true" >
+
+            <ImageView
+                android1:id="@+id/img_dailysportintensity_veryhigh"
+                android1:layout_width="62px"
+                android1:layout_height="58px"
+                android1:src="@drawable/activity_dailysportintensity_leopard" />
+
+            <TextView
+                android1:id="@+id/lbl_dailysportintensity_veryhigh"
+                android1:layout_width="wrap_content"
+                android1:layout_height="wrap_content"
+                android1:layout_below="@id/img_dailysportintensity_veryhigh"
+                android1:layout_centerHorizontal="true"
+                android1:layout_marginTop="8px"
+                android1:text="@string/activity_dailysportintensity_veryhigh"
+                android1:textColor="@color/common_note_text"
+                android1:textSize="30px" />
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android1:id="@+id/rl_dailysportintensity_linebar"
+        android1:layout_width="622px"
+        android1:layout_height="wrap_content"
+        android1:layout_below="@id/rl_dailysportintensity_picture"
+        android1:layout_centerHorizontal="true"
+        android1:layout_marginTop="10px" >
+
+        <SeekBar
+            android1:id="@+id/seekbar_dailysportintensity_level"
+            android1:layout_width="622px"
+            android1:layout_height="10px"
+            android1:layout_centerHorizontal="true"
+            android1:layout_centerVertical="true"
+            android1:longClickable="false"
+            android1:max="3"
+            android1:paddingLeft="18px"
+            android1:paddingRight="18px"
+            android1:progress="0"
+            android1:progressDrawable="@drawable/activity_dailysportintensity_seekbar"
+            android1:thumb="@android:color/transparent" />
+
+        <ImageView
+            android1:id="@+id/img_dailysportintensity_seek"
+            android1:layout_width="36px"
+            android1:layout_height="38px"
+            android1:layout_alignParentLeft="true"
+            android1:layout_centerHorizontal="false"
+            android1:layout_centerVertical="true"
+            android1:src="@drawable/activity_dailysportintensity_seekbarcircle" />
+
+    </RelativeLayout>
+
+    <Button
+        android1:id="@+id/btn_dailysportintensity_next"
+        android1:layout_width="527px"
+        android1:layout_height="90px"
+        android1:layout_alignParentBottom="true"
+        android1:layout_centerHorizontal="true"
+        android1:layout_marginBottom="70px"
+        android1:background="@drawable/btn_green"
+        android1:text="@string/activity_dailysportintensity_btn_next"
+        android1:textColor="@color/color_white"
+        android1:textSize="@dimen/button_label_fnt_size" />
+
+</RelativeLayout>

@@ -1,0 +1,244 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:android1="http://schemas.android.com/apk/res/android"
+    android:id="@+id/rl_foodrecordinfo"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android1:background="@drawable/common_background"
+    tools:context=".LoginActivity" >
+
+    <RelativeLayout
+        android1:id="@+id/rl_foodrecordinfo_header"
+        android1:layout_width="fill_parent"
+        android1:layout_height="95px"
+        android1:layout_alignParentLeft="true"
+        android1:layout_alignParentTop="true"
+        android1:background="@color/common_titlebar_back4" >
+
+        <ImageButton
+            android1:id="@+id/imgbtn_foodrecordinfo_back"
+            android1:layout_width="55px"
+            android1:layout_height="55px"
+            android1:layout_centerVertical="true"
+            android1:layout_marginLeft="20px"
+            android1:background="@android:color/transparent"
+            android1:scaleType="fitCenter"
+            android1:src="@drawable/btn_back" />
+
+        <TextView
+            android1:id="@+id/lbl_foodrecordinfo_title"
+            android1:layout_width="400px"
+            android1:layout_height="match_parent"
+            android1:layout_centerHorizontal="true"
+            android1:background="@android:color/transparent"
+            android1:gravity="center"
+            android1:text="@string/activity_foodrecordinfo_title"
+            android1:textColor="@android:color/white"
+            android1:textSize="@dimen/title_fnt_size" />
+
+        <Button
+            android1:id="@+id/btn_foodrecordinfo_save"
+            android1:layout_width="112px"
+            android1:layout_height="64px"
+            android1:layout_alignParentRight="true"
+            android1:layout_centerVertical="true"
+            android1:layout_marginRight="24px"
+            android1:background="@drawable/btn_transparent"
+            android1:text="@string/activity_foodrecordinfo_save"
+            android1:textColor="@color/color_white"
+            android1:textSize="@dimen/normal_fnt_size" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android1:id="@+id/rl_foodrecordinfo_paragraph1"
+        android1:layout_width="fill_parent"
+        android1:layout_height="216px"
+        android1:layout_below="@id/rl_foodrecordinfo_header"
+        android1:background="@color/color_white" >
+
+        <ImageView
+            android1:id="@+id/img_foodrecordinfo_foodimg"
+            android1:layout_width="200px"
+            android1:layout_height="180px"
+            android1:layout_alignParentLeft="true"
+            android1:layout_centerVertical="true"
+            android1:layout_marginLeft="18px" />
+
+        <RelativeLayout
+            android1:layout_width="200px"
+            android1:layout_height="180px"
+            android1:layout_centerVertical="true"
+            android1:layout_marginLeft="18px" >
+
+            <LinearLayout
+                android1:id="@+id/LinearLayout01"
+                android1:layout_width="fill_parent"
+                android1:layout_height="wrap_content"
+                android1:layout_alignParentTop="true"
+                android1:background="@drawable/common_separate"
+                android1:orientation="vertical" >
+            </LinearLayout>
+
+            <LinearLayout
+                android1:id="@+id/LinearLayout02"
+                android1:layout_width="fill_parent"
+                android1:layout_height="wrap_content"
+                android1:layout_alignParentBottom="true"
+                android1:background="@drawable/common_separate"
+                android1:orientation="vertical" >
+            </LinearLayout>
+
+            <LinearLayout
+                android1:id="@+id/LinearLayout03"
+                android1:layout_width="wrap_content"
+                android1:layout_height="fill_parent"
+                android1:layout_alignParentRight="true"
+                android1:background="@drawable/common_separator"
+                android1:orientation="vertical" >
+            </LinearLayout>
+
+            <LinearLayout
+                android1:id="@+id/LinearLayout04"
+                android1:layout_width="wrap_content"
+                android1:layout_height="fill_parent"
+                android1:layout_alignParentLeft="true"
+                android1:background="@drawable/common_separator"
+                android1:orientation="vertical" >
+            </LinearLayout>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android1:layout_width="fill_parent"
+            android1:layout_height="115px"
+            android1:layout_centerVertical="true"
+            android1:layout_marginLeft="38px"
+            android1:layout_toRightOf="@id/img_foodrecordinfo_foodimg" >
+
+            <TextView
+                android1:id="@+id/lbl_foodrecordinfo_foodname"
+                android1:layout_width="wrap_content"
+                android1:layout_height="40px"
+                android1:textAppearance="?android:attr/textAppearanceLarge"
+                android1:textColor="@color/common_note_text"
+                android1:textSize="36px" />
+
+            <TextView
+                android1:id="@+id/lbl_foodrecordinfo_foodcalory"
+                android1:layout_width="wrap_content"
+                android1:layout_height="wrap_content"
+                android1:layout_alignParentBottom="true"
+                android1:textColor="#FF0000"
+                android1:textSize="36px" />
+
+            <TextView
+                android1:id="@+id/lbl_foodrecordinfo_foodmass"
+                android1:layout_width="wrap_content"
+                android1:layout_height="wrap_content"
+                android1:layout_alignParentBottom="true"
+                android1:layout_toRightOf="@id/lbl_foodrecordinfo_foodcalory"
+                android1:textColor="@color/common_note_text"
+                android1:textSize="36px" />
+        </RelativeLayout>
+
+        <LinearLayout
+            android1:id="@+id/LinearLayout1"
+            android1:layout_width="fill_parent"
+            android1:layout_height="wrap_content"
+            android1:layout_alignParentBottom="true"
+            android1:background="@drawable/common_separate"
+            android1:orientation="vertical" >
+        </LinearLayout>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android1:id="@+id/rl_foodrecordinfo_paragraph2"
+        android1:layout_width="fill_parent"
+        android1:layout_height="380px"
+        android1:layout_below="@id/rl_foodrecordinfo_paragraph1"
+        android1:layout_marginTop="50px" >
+
+        <RelativeLayout
+            android1:layout_width="fill_parent"
+            android1:layout_height="265px"
+            android1:layout_alignParentTop="true" >
+
+            <com.damy.Utils.RulerSliderView
+                android1:id="@+id/ruler_foodrecordinfo_value"
+                android1:layout_width="fill_parent"
+                android1:layout_height="fill_parent" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android1:layout_width="fill_parent"
+            android1:layout_height="wrap_content"
+            android1:layout_alignParentBottom="true" >
+
+            <RelativeLayout
+                android1:id="@+id/rl_foodrecordinfo_massamount"
+                android1:layout_width="wrap_content"
+                android1:layout_height="wrap_content"
+                android1:layout_alignParentRight="true"
+                android1:layout_marginRight="30px" >
+
+                <Button
+                    android1:id="@+id/btn_foodrecordinfo_massamount"
+                    android1:layout_width="150px"
+                    android1:layout_height="70px"
+                    android1:background="@drawable/btn_green_u"
+                    android1:text="@string/common_amount"
+                    android1:textColor="@color/color_white" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android1:id="@+id/rl_foodrecordinfo_massgram"
+                android1:layout_width="wrap_content"
+                android1:layout_height="wrap_content"
+                android1:layout_alignParentRight="true"
+                android1:layout_marginRight="210px" >
+
+                <Button
+                    android1:id="@+id/btn_foodrecordinfo_massgram"
+                    android1:layout_width="150px"
+                    android1:layout_height="70px"
+                    android1:background="@drawable/btn_green_d"
+                    android1:text="@string/common_gram"
+                    android1:textColor="@color/color_white" />
+
+            </RelativeLayout>
+
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android1:id="@+id/rl_foodrecordinfo_paragraph3"
+        android1:layout_width="fill_parent"
+        android1:layout_height="250px"
+        android1:layout_below="@id/rl_foodrecordinfo_paragraph2"
+        android1:layout_marginTop="50px" >
+
+        <ImageView
+            android1:id="@+id/img_foodrecordinfo_uploadimg"
+            android1:layout_width="350px"
+            android1:layout_height="250px"
+            android1:layout_centerHorizontal="true"
+            android1:layout_centerVertical="true" />
+
+    </RelativeLayout>
+
+    <Button
+        android1:id="@+id/btn_foodrecordinfo_photo"
+        android1:layout_width="527px"
+        android1:layout_height="90px"
+        android1:layout_alignParentBottom="true"
+        android1:layout_centerHorizontal="true"
+        android1:layout_marginBottom="70px"
+        android1:background="@drawable/btn_green"
+        android1:text="@string/activity_foodrecordinfo_photo"
+        android1:textColor="@color/color_white"
+        android1:textSize="@dimen/button_label_fnt_size" />
+
+</RelativeLayout>

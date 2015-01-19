@@ -1,0 +1,144 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/rl_healthvideolist"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/common_background"
+    tools:context=".ShengLiZiLiaoActivity" >
+
+    <RelativeLayout
+        android:id="@+id/rl_healthvideolist_header"
+        android:layout_width="fill_parent"
+        android:layout_height="95px"
+        android:background="@color/common_titlebar_back5" >
+
+        <ImageButton
+            android:id="@+id/img_healthvideolist_back"
+            android:layout_width="55px"
+            android:layout_height="55px"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="20px"
+            android:background="@android:color/transparent"
+            android:scaleType="fitCenter"
+            android:src="@drawable/btn_back" />
+
+        <TextView
+            android:id="@+id/lbl_healthvideo_title"
+            android:layout_width="400px"
+            android:layout_height="match_parent"
+            android:layout_centerHorizontal="true"
+            android:background="@android:color/transparent"
+            android:gravity="center"
+            android:text="@string/activity_healthvideolist_title1"
+            android:textColor="@android:color/white"
+            android:textSize="@dimen/title_fnt_size" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/rl_healthvideolist_type"
+        android:layout_width="fill_parent"
+        android:layout_height="107px"
+        android:layout_below="@+id/rl_healthvideolist_header"
+        android:background="@color/color_white" >
+
+        <RelativeLayout
+            android:id="@+id/rl_healthvideolist_type_data"
+            android:layout_width="fill_parent"
+            android:layout_height="106px" >
+
+            <RelativeLayout
+                android:id="@+id/rl_healthvideolist_title_news"
+                android:layout_width="360px"
+                android:layout_height="fill_parent" >
+
+                <RelativeLayout
+                    android:id="@+id/rl_healthvideolist_header_news"
+                    android:layout_width="fill_parent"
+                    android:layout_height="100px" >
+
+                    <TextView
+                        android:id="@+id/txt_healthvideolist_title_news"
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent"
+                        android:layout_marginLeft="100px"
+                        android:layout_marginTop="30px"
+                        android:text="@string/activity_healthvideolist_title1"
+                        android:textColor="@color/common_titlebar_back"
+                        android:textSize="@dimen/title_fnt_size" />
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/rl_healthvideolist_title_news_border"
+                    android:layout_width="fill_parent"
+                    android:layout_height="6px"
+                    android:layout_marginTop="100px"
+                    android:background="@color/common_normal_text" >
+
+                </RelativeLayout>
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/rl_healthvideolist_title_health"
+                android:layout_width="360px"
+                android:layout_height="fill_parent"
+                android:layout_marginLeft="360px" >
+
+                <RelativeLayout
+                    android:id="@+id/rl_healthvideolist_header_health"
+                    android:layout_width="fill_parent"
+                    android:layout_height="100px" >
+
+                    <TextView
+                        android:id="@+id/txt_healthvideolist_title_health"
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent"
+                        android:layout_marginLeft="100px"
+                        android:layout_marginTop="30px"
+                        android:text="@string/activity_healthvideolist_title2"
+                        android:textColor="@color/common_note_text"
+                        android:textSize="@dimen/title_fnt_size" />
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/rl_healthvideolist_title_health_border"
+                    android:layout_width="fill_parent"
+                    android:layout_height="6px"
+                    android:layout_below="@+id/rl_healthvideolist_header_health"
+                    android:background="@color/color_white" >
+
+                </RelativeLayout>
+
+            </RelativeLayout>
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="1px"
+            android:layout_below="@+id/rl_healthvideolist_type_data"
+            android:background="@color/common_list_border" >
+
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/rl_weightinfolist_data"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/rl_healthvideolist_type" >
+
+       <com.damy.Utils.PullToRefreshListView
+           android:id="@+id/anHealthVideoListContentView"
+           android:layout_width="fill_parent"
+           android:layout_height="fill_parent"
+           android:orientation="vertical" >
+
+        </com.damy.Utils.PullToRefreshListView>   
+    </RelativeLayout>
+
+</RelativeLayout>

@@ -1,0 +1,265 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:android1="http://schemas.android.com/apk/res/android"
+    android:id="@+id/rl_sportrecordinfo"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android1:background="@drawable/common_background"
+    tools:context=".LoginActivity" >
+
+    <RelativeLayout
+        android1:id="@+id/rl_sportrecordinfo_header"
+        android1:layout_width="fill_parent"
+        android1:layout_height="95px"
+        android1:layout_alignParentLeft="true"
+        android1:layout_alignParentTop="true"
+        android1:background="@color/common_titlebar_back3" >
+
+        <ImageButton
+            android1:id="@+id/imgbtn_sportrecordinfo_back"
+            android1:layout_width="55px"
+            android1:layout_height="55px"
+            android1:layout_centerVertical="true"
+            android1:layout_marginLeft="20px"
+            android1:background="@android:color/transparent"
+            android1:scaleType="fitCenter"
+            android1:src="@drawable/btn_back" />
+
+        <TextView
+            android1:id="@+id/lbl_sportrecordinfo_title"
+            android1:layout_width="400px"
+            android1:layout_height="match_parent"
+            android1:layout_centerHorizontal="true"
+            android1:background="@android:color/transparent"
+            android1:gravity="center"
+            android1:text="@string/activity_sportrecord_title"
+            android1:textColor="@android:color/white"
+            android1:textSize="@dimen/title_fnt_size" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android1:id="@+id/rl_sportrecordinfo_sportinfo"
+        android1:layout_width="fill_parent"
+        android1:layout_height="118px"
+        android1:layout_below="@id/rl_sportrecordinfo_header"
+        android1:background="@color/color_white" >
+
+        <TextView
+            android1:id="@+id/lbl_sportrecordinfo_type"
+            android1:layout_width="wrap_content"
+            android1:layout_height="wrap_content"
+            android1:layout_alignParentLeft="true"
+            android1:layout_centerHorizontal="true"
+            android1:layout_centerVertical="true"
+            android1:layout_marginLeft="43px"
+            android1:gravity="center_vertical|center_horizontal"
+            android1:text="Inline Skating(Indoor)"
+            android1:textColor="@color/common_titlebar_back3"
+            android1:textSize="33px" />
+
+        <ImageView
+            android1:id="@+id/img_sportrecordinfo_icon"
+            android1:layout_width="80px"
+            android1:layout_height="80px"
+            android1:layout_alignParentRight="true"
+            android1:layout_centerVertical="true"
+            android1:layout_marginRight="43px"
+            android1:layout_toRightOf="@id/lbl_sportrecord_date"
+            android1:src="@drawable/common_sport" />
+
+        <LinearLayout
+            android1:layout_width="fill_parent"
+            android1:layout_height="wrap_content"
+            android1:layout_alignParentBottom="true"
+            android1:background="@drawable/common_separate"
+            android1:orientation="vertical" >
+        </LinearLayout>
+    </RelativeLayout>
+
+    <TextView
+        android1:id="@+id/lbl_sportrecordinfo_date"
+        android1:layout_width="wrap_content"
+        android1:layout_height="wrap_content"
+        android1:layout_below="@id/rl_sportrecordinfo_sportinfo"
+        android1:layout_centerHorizontal="true"
+        android1:layout_marginTop="55px"
+        android1:text="日期：2014年8月21日"
+        android1:textColor="@color/common_note_text"
+        android1:textSize="36px" />
+
+    <TextView
+        android1:id="@+id/lbl_sportrecordinfo_time"
+        android1:layout_width="wrap_content"
+        android1:layout_height="wrap_content"
+        android1:layout_below="@id/lbl_sportrecordinfo_date"
+        android1:layout_centerHorizontal="true"
+        android1:layout_marginTop="20px"
+        android1:text="13:00 ~ 16:30"
+        android1:textColor="@color/common_note_text"
+        android1:textSize="34px" />
+
+    <RelativeLayout
+        android1:id="@+id/rl_sportrecordinfo_starttime"
+        android1:layout_width="460px"
+        android1:layout_height="82px"
+        android1:layout_below="@id/lbl_sportrecordinfo_time"
+        android1:layout_centerHorizontal="true"
+        android1:layout_marginTop="60px" >
+
+        <TextView
+            android1:id="@+id/textView1"
+            android1:layout_width="wrap_content"
+            android1:layout_height="wrap_content"
+            android1:layout_alignParentLeft="true"
+            android1:layout_centerVertical="true"
+            android1:text="@string/activity_sportrecordinfo_starttime"
+            android1:textColor="#848484"
+            android1:textSize="34px" />
+
+        <Button
+            android1:id="@+id/btn_sportrecordinfo_starttime"
+            android1:layout_width="284px"
+            android1:layout_height="82px"
+            android1:layout_alignParentRight="true"
+            android1:layout_centerVertical="true"
+            android1:background="@drawable/btn_white"
+            android1:text="@string/activity_sportrecordinfo_selstarttime"
+            android1:textColor="@color/common_normal_text"
+            android1:textSize="34px" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android1:id="@+id/rl_sportrecordinfo_endtime"
+        android1:layout_width="460px"
+        android1:layout_height="82px"
+        android1:layout_below="@id/rl_sportrecordinfo_starttime"
+        android1:layout_centerHorizontal="true"
+        android1:layout_centerVertical="true"
+        android1:layout_marginTop="45px" >
+
+        <TextView
+            android1:id="@+id/TextView01"
+            android1:layout_width="wrap_content"
+            android1:layout_height="wrap_content"
+            android1:layout_alignParentLeft="true"
+            android1:layout_centerVertical="true"
+            android1:text="@string/activity_sportrecordinfo_endtime"
+            android1:textColor="#848484"
+            android1:textSize="34px" />
+
+        <Button
+            android1:id="@+id/btn_sportrecordinfo_endtime"
+            android1:layout_width="284px"
+            android1:layout_height="82px"
+            android1:layout_alignParentRight="true"
+            android1:layout_centerVertical="true"
+            android1:background="@drawable/btn_white"
+            android1:text="@string/activity_sportrecordinfo_selendtime"
+            android1:textColor="@color/common_normal_text"
+            android1:textSize="34px" />
+    </RelativeLayout>
+
+    <Button
+        android1:id="@+id/btn_sportrecordinfo_save"
+        android1:layout_width="527px"
+        android1:layout_height="90px"
+        android1:layout_alignParentBottom="true"
+        android1:layout_centerHorizontal="true"
+        android1:layout_marginBottom="70px"
+        android1:background="@drawable/btn_green"
+        android1:text="@string/activity_sportrecordinfo_save"
+        android1:textColor="@color/color_white"
+        android1:textSize="@dimen/button_label_fnt_size" />
+
+    <RelativeLayout
+        android1:id="@+id/rl_sportrecordinfo_mask"
+        android1:layout_width="fill_parent"
+        android1:layout_height="fill_parent"
+        android1:background="@drawable/transparent_back" >
+    </RelativeLayout>
+
+    <RelativeLayout
+        android1:id="@+id/rl_sportrecordinfo_pickerdialog"
+        android1:layout_width="600px"
+        android1:layout_height="770px"
+        android1:layout_centerHorizontal="true"
+        android1:layout_centerVertical="true" >
+
+        <TextView
+            android1:id="@+id/lbl_sportrecordinfo_pickerdialog_title"
+            android1:layout_width="fill_parent"
+            android1:layout_height="80px"
+            android1:background="@color/common_titlebar_back"
+            android1:gravity="center_vertical|center_horizontal"
+            android1:text="@string/activity_sportrecordinfo_selstarttime"
+            android1:textColor="@color/color_white"
+            android1:textSize="@dimen/title_fnt_size" />
+
+        <RelativeLayout
+            android1:layout_width="fill_parent"
+            android1:layout_height="fill_parent"
+            android1:layout_below="@id/lbl_sportrecordinfo_pickerdialog_title"
+            android1:background="@color/color_white" >
+
+            <RelativeLayout
+                android1:id="@+id/rl_sportrecordinfo_pickerdialog_picker"
+                android1:layout_width="526px"
+                android1:layout_height="506px"
+                android1:layout_centerHorizontal="true"
+                android1:layout_marginTop="50px"
+                android1:background="@drawable/common_picker_back" >
+
+                <RelativeLayout
+                    android1:layout_width="fill_parent"
+                    android1:layout_height="370px"
+                    android1:layout_centerVertical="true"
+                    android1:layout_marginLeft="16px"
+                    android1:layout_marginRight="16px" >
+
+                    <com.damy.Utils.WheelPicker.WheelView
+                        android1:id="@+id/wheel_sportrecordinfo_hour"
+                        android1:layout_width="250px"
+                        android1:layout_height="fill_parent"
+                        android1:layout_weight="60" />
+
+                    <com.damy.Utils.WheelPicker.WheelView
+                        android1:id="@+id/wheel_sportrecordinfo_minute"
+                        android1:layout_width="fill_parent"
+                        android1:layout_height="fill_parent"
+                        android1:layout_toRightOf="@id/wheel_sportrecordinfo_hour"
+                        android1:layout_weight="60" />
+                </RelativeLayout>
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android1:layout_width="450px"
+                android1:layout_height="70px"
+                android1:layout_below="@id/rl_sportrecordinfo_pickerdialog_picker"
+                android1:layout_centerHorizontal="true"
+                android1:layout_marginTop="30px" >
+
+                <Button
+                    android1:id="@+id/btn_sportrecordinfo_pickerdialog_ok"
+                    android1:layout_width="200px"
+                    android1:layout_height="fill_parent"
+                    android1:layout_alignParentLeft="true"
+                    android1:background="@drawable/btn_green"
+                    android1:text="@string/common_ok"
+                    android1:textColor="@color/color_white"
+                    android1:textSize="@dimen/button_label_fnt_size" />
+
+                <Button
+                    android1:id="@+id/btn_sportrecordinfo_pickerdialog_cancel"
+                    android1:layout_width="200px"
+                    android1:layout_height="fill_parent"
+                    android1:layout_alignParentRight="true"
+                    android1:background="@drawable/btn_white"
+                    android1:text="@string/common_cancel"
+                    android1:textColor="@color/common_normal_text"
+                    android1:textSize="@dimen/button_label_fnt_size" />
+            </RelativeLayout>
+        </RelativeLayout>
+    </RelativeLayout>
+
+</RelativeLayout>

@@ -1,0 +1,51 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/rlMain"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/common_background"
+    tools:context=".ShengLiZiLiaoActivity" >
+
+    <RelativeLayout
+        android:id="@+id/rlHeader"
+        android:layout_width="fill_parent"
+        android:layout_height="95px"
+        android:background="@color/common_titlebar_back6" >
+
+        <ImageButton
+            android:id="@+id/imgbtnBack"
+            android:layout_width="55px"
+            android:layout_height="55px"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="20px"
+            android:background="@android:color/transparent"
+            android:scaleType="fitCenter"
+            android:src="@drawable/btn_back" />
+
+        <TextView
+            android:id="@+id/lblTitle"
+            android:layout_width="400px"
+            android:layout_height="match_parent"
+            android:layout_centerHorizontal="true"
+            android:background="@android:color/transparent"
+            android:gravity="center"
+            android:text="@string/online_faq"
+            android:textColor="@android:color/white"
+            android:textSize="@dimen/title_fnt_size" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/rlQuestionlist"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_below="@+id/rlHeader" >
+	  
+	  <com.damy.Utils.PullToRefreshListView
+        	android:id="@+id/anQuestionListContentView"
+        	android:layout_width="fill_parent"
+         	android:layout_height="fill_parent" >
+      </com.damy.Utils.PullToRefreshListView>
+    </RelativeLayout>
+
+</RelativeLayout>

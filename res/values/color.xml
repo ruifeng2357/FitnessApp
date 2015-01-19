@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="color_white">#ffffff</color>
+    <color name="color_black">#000000</color>
+    <color name="common_titlebar_back">#00a086</color>
+    <color name="common_titlebar_back1">#8dcee4</color>
+    <color name="common_titlebar_back2">#f17ca8</color>
+    <color name="common_titlebar_back3">#a1d07f</color>
+    <color name="common_titlebar_back4">#ed9206</color>
+    <color name="common_titlebar_back5">#a25b7b</color>
+    <color name="common_titlebar_back6">#4fcfda</color>
+    <color name="common_normal_text">#00a086</color>
+    <color name="common_placeholder_text">#a5a5a5</color>
+    <color name="common_note_text">#6e6e6e</color>
+    <color name="common_lightgray">#bbbbbb</color>
+    <color name="common_weightinfolist_header">#e1e1e1</color>
+    <color name="common_list_border">#d6d6d6</color>
+    <color name="common_whitegray">#848484</color>
+</resources>

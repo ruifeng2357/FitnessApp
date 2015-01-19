@@ -1,0 +1,80 @@
+<RelativeLayout xmlns:tools="http://schemas.android.com/tools"
+    xmlns:android1="http://schemas.android.com/apk/res/android"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/rl_alarmalert"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    tools:context=".LoginActivity" >
+
+    <RelativeLayout
+        android1:layout_width="fill_parent"
+        android1:layout_height="fill_parent"
+        android1:background="@drawable/common_background" >
+
+        <TextView
+            android1:id="@+id/lbl_alarmalert_title"
+            android1:layout_width="wrap_content"
+            android1:layout_height="wrap_content"
+            android1:layout_centerHorizontal="true"
+            android1:layout_marginTop="96px"
+            android1:text="網健康"
+            android1:textColor="#00a086"
+            android1:textSize="60px" />
+
+        <TextView
+            android1:id="@+id/alertTime"
+            android1:layout_width="wrap_content"
+            android1:layout_height="wrap_content"
+            android1:layout_below="@id/lbl_alarmalert_title"
+            android1:layout_centerHorizontal="true"
+            android1:layout_marginTop="50px"
+            android1:text="16:00"
+            android1:textColor="#00a086"
+            android1:textSize="200px" />
+
+        <TextView
+            android1:id="@+id/alertTitle"
+            android1:layout_width="500px"
+            android1:layout_height="200px"
+            android1:layout_below="@id/alertTime"
+            android1:layout_centerHorizontal="true"
+            android1:layout_marginTop="60px"
+            android1:gravity="center_vertical|center_horizontal"
+            android1:text="Sport Time"
+            android1:textColor="#878787"
+            android1:textSize="40px" />
+
+        <Button
+            android1:id="@+id/snooze"
+            android1:layout_width="527px"
+            android1:layout_height="89px"
+            android1:layout_below="@id/alertTitle"
+            android1:layout_centerHorizontal="true"
+            android1:layout_marginTop="55px"
+            android1:background="@drawable/activity_alarmalert_retry_btn"
+            android1:text="@string/activity_alarmalert_btnretry"
+            android1:textColor="@color/color_white"
+            android1:textSize="36px" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android1:layout_width="fill_parent"
+        android1:layout_height="246px"
+        android1:layout_alignParentBottom="true"
+        android:background="#bebebe" >
+
+        <Button
+            android:id="@+id/dismiss"
+            android:layout_width="629px"
+            android:layout_height="109px"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:gravity="center_vertical|center_horizontal"
+            android:text="@string/activity_alarmalert_cancel"
+            android:textColor="@color/color_white"
+            android:textSize="36px" />
+
+    </RelativeLayout>
+
+</RelativeLayout>

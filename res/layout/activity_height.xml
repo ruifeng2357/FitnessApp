@@ -1,0 +1,99 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/rl_height"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/common_background"
+    tools:context=".LoginActivity" >
+
+    <RelativeLayout
+        android:id="@+id/rl_height_header"
+        android:layout_width="fill_parent"
+        android:layout_height="95px"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:background="#00a086" >
+
+        <ImageButton
+                android:id="@+id/imgbtn_height_back"
+                android:layout_width="55px"
+                android:layout_height="55px"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="20px"
+                android:background="@android:color/transparent"
+                android:scaleType="fitCenter"
+                android:src="@drawable/btn_back" />
+
+        <TextView
+            android:id="@+id/lbl_height_title"
+            android:layout_width="400px"
+            android:layout_height="match_parent"
+            android:layout_centerHorizontal="true"
+            android:background="@android:color/transparent"
+            android:gravity="center"
+            android:text="@string/activity_height_title"
+            android:textColor="@android:color/white"
+            android:textSize="@dimen/title_fnt_size" />
+
+        <Button
+            android:id="@+id/btn_height_save"
+            android:layout_width="112px"
+            android:layout_height="64px"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="24px"
+            android:background="@drawable/btn_transparent"
+            android:text="@string/common_save"
+            android:textColor="@color/color_white"
+            android:textSize="@dimen/normal_fnt_size" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/rl_height_picker"
+        android:layout_width="526px"
+        android:layout_height="506px"
+        android:layout_below="@id/rl_height_header"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="100px"
+        android:background="@drawable/common_picker_back" >
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="370px"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="16px"
+            android:layout_marginRight="16px" >
+
+            <com.damy.Utils.WheelPicker.WheelView
+                android:id="@+id/wheel_height_int"
+                android:layout_width="250px"
+                android:layout_height="fill_parent"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentTop="true"
+                android:layout_weight="60" />
+
+            <com.damy.Utils.WheelPicker.WheelView
+                android:id="@+id/wheel_height_float"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_toRightOf="@+id/wheel_height_int"
+                android:layout_weight="60" />
+
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+    <Button
+        android:id="@+id/btn_height_next"
+        android:layout_width="527px"
+        android:layout_height="90px"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="70px"
+        android:background="@drawable/btn_green"
+        android:text="@string/activity_height_btn_next"
+        android:textColor="@color/color_white"
+        android:textSize="@dimen/button_label_fnt_size" />
+
+</RelativeLayout>
